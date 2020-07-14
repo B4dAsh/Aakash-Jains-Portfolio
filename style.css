@@ -4,7 +4,7 @@ body{
     color: black;
     margin: 0;
     padding: 0;
-    font-family: "Grenze Gotisch", cursive, sans-serif;   }
+    font-family: "Grenze Gotisch", cursive;   }
 
 /*  ==================================================================     
     ==================================================================   */
@@ -17,12 +17,15 @@ header{
     height: 50vh;
     color: orange;
     background: url();
-    background-color: hsl(205, 85%, 25%);
+    background-color: rgba(10, 73, 118, 1);
     margin: 0 0 2% 0;
     padding: 2% 0%;   }
     .header-intro{
         margin: 0;
         padding: 0;    }
+    header > h3{
+        color: white;
+        font-family: "Poppins", serif;    }
     .header-button{
         color:white;
         align-items: center;
@@ -36,52 +39,67 @@ header{
     ==================================================================   */
 
 main{
-    margin: 10% 1%;
-    display: flex;
-    font-family: "Poppins", serif;   }
-    .initial-partition{}
-        .intro-container{
-            display: flex;
-            flex-direction: column;
-            align-items: center;    }
-            .photo-container{}
-                .my-photo{
-                    align-self: center;
-                    width: 250px;
-                    height: 250px; 
-                    border: 2px solid rgba(0, 0, 0, 0.1);
-                    border-radius: 50%;    }
-            .intro{
-                text-align: justify;
-                font-family: "Poppins", serif;
-                margin: 2% 4%;
-                padding: 1%;
-                box-shadow: 10px 10px 7.5px rgba(0, 0, 0, 0.1);   }
-        .list-container{
-            display: grid;
-            margin: 5%;
-            grid-gap: 2%;}
-        .list-container > * {
-            padding: 5%, 0;
-            padding-left: 5vw;   }
-            .programming-langs{
-                background-color: teal;
-                box-shadow: 10px 10px 5px  rgba(0, 0, 0, 0.2);   }
-                .programming-langs-list{}
-            .techs{
-                background-color: plum;
-                box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);    }
-            .hobbies{
-                background-color:  Antiquewhite;
-                box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);    }
-            .langs{
-                background-color: Powderblue;
-                box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);    }
-            .main-list-titles{
-                font-family: "Grenze Gotisch", cursive;
-                color: ;
-                text-align: left;
-                padding: 0 0 0 5%;  }
+    margin: 3vh 0;
+    font-family: "Grenze Gotisch", serif;
+    margin: 0 4vw;   }
+    .intro-container{
+        display: grid;
+        justify-items: center;
+        margin: 5vh 0;    }
+        .my-photo{
+            width: 250px;
+            height: 250px; 
+            border: 4px solid orange;
+            border-radius: 50%;    }
+        .intro{
+            text-align: justify;
+            font-family: "Poppins", serif;
+            margin: 7.5vh 0 0 0;
+            padding: 0 3vw;
+            border-top: 4px solid orange;
+            border-left: 4px solid orange;
+            border-right: 1px solid rgba(10, 73, 118, 1);
+            border-bottom: 1px solid rgba(10, 73, 118, 1);
+            box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);   }
+        .intro::first-letter{
+                font-size: 2rem;
+                padding-left: 10vw;    }
+    .academic-qualifications{
+        font-family: "Poppins", sans-serif;
+        border: 1px solid rgba(10, 73, 118, 1);
+        box-shadow: 0px 0px 10px orange;
+        padding: 2.5vh 7.5vw 2.5vh 0vw;   }
+        .academic-qualifications-title{
+            font-size: 1.375rem;
+            font-weight: bold;
+            opacity: 0.8;
+            padding: 0 0 0 5vw;    }
+
+    .intro-list-divider{
+        border: 2px solid rgba(10, 73, 118, 0.75);
+        border-radius: 50%; 
+        margin: 5vh;}
+
+    .list-container{
+        display: grid;
+        grid-gap: 5vh;   }
+        .programming-langs {
+            background-color: teal;
+            box-shadow: 10px 10px 5px  rgba(0, 0, 0, 0.2);   }
+        .techs{
+            background-color: plum;
+            box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);    }
+        .hobbies{
+            background-color:  Antiquewhite;
+            box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);    }
+        .langs{
+            background-color: Powderblue;
+            box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);    }
+        .main-list-titles{
+            font-size: 1.25rem;
+            font-weight: bold;
+            font-family: "Poppins", sans-serif;
+            padding: 1vh 0 0 5%;  }
 
 @media (orientation: landscape){
     main{
@@ -97,10 +115,10 @@ main{
     ==================================================================   */
 
 footer{
-    margin: 10vh 0 0 0;
+    color: white;
+    background-color: rgba(0, 0, 0, 1);
+    font-family: "Poppins", serif;
     text-align: center;
-    color: orange;
-    background-color: hsl(205, 85%, 25%);
 }
 
 /*  ==================================================================     
