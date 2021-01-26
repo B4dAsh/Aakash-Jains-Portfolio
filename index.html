@@ -1,33 +1,60 @@
 <!DOCTYPE html>
 <html lang="eng">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width,initial scale=1.0">
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-        <title>Portfolio of Aakash Jain.</title>
-    </head>
-    <body>
-        <header>
-                <div class="navbar">
-                    <!--ToDo-->
+  <head>
+  
+		<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial scale=1.0">
+    <title>Portfolio of Aakash Jain.</title>
+    
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <script src="script.js"></script>
+    <script async src="https://kit.fontawesome.com/7ae16fe407.js" crossorigin="anonymous"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-81EBXREQN6"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-81EBXREQN6');
+    </script>
+
+	</head>
+	<body id="body">
+
+		<header>
+
+			<nav class="navbar">
+        <h3 class="navbar-title">Aakash Jain</h3>
+				<button class="hamburger-btn" onclick="openHamburger()">
+					<i class="fas fa-bars"></i>
+        </button>
+        <div id="hamburger-menu" class="hamburger-menu">
+          <span>this</span>
+          <span>is</span>
+          <span>a</span>
+          <span>hamburger</span>
+          <span>menu.</span>
+        </div>
+			</nav>
+
+			<div class="header-main">
+				<h1 class="header-intro-title">HEY, I'M ASH!</h1>
+				<h3>Welcome to my Website.</h3>
+				<a href="#main"><input type="button" class="header-button" value="Take a Tour"/></a>
+			</div>
+
+		</header>
+
+		<main id="main">
+
+			<div class="intro-container">
+				<div class="photo-container">
+					<img class="my-photo" src="images/my-img1.jpg" alt="Unable to Load"/>
                 </div>
-                
-                <h1 class="header-intro">HEY, I'M ASH!</h1>
-                <h3>Welcome to my Website.</h3>
-                <a href="#main"><input type="button" class="header-button" value="Take a Tour"/></a>
-        </header>
 
-        <main id="main">
-
-            <div class="intro-container">
-
-                <div class="photo-container">
-                    <img class="my-photo" src="images/my-img1.jpg" alt="Unable to Load"/>
-                </div>
-
-                <div class="intro">
+                <div class="main-intro">
                     <p>I am second year CS grad student and following is the list of what I've learnt so far, along with this I am highly curious about Android-dev, Pentesting/Ethical Hacking, Data-Science and furthormore cutting edge tech like Machine Learning & AI along with Augmented & Virtual Realities.</p>
                     <p>Besides Computer Science, I'm interested in Maths, Astrophysics, Cosmology, Human-Psycology, Philosophy, Literature & Various Mythologies. Yeah, I'm a Nerd!</p>
                     <p>In my spare time I daydream :p, watch movies & animes, read fiction, listen quality rock, metal & punk.</p>
@@ -140,5 +167,6 @@
             </div>
 
         </footer>
+
     </body>
 </html>
