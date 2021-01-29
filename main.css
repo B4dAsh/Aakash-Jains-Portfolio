@@ -1,0 +1,124 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    font-family: var(--primary-font), serif;
+    color: white;
+    background-color: var(--background-primary); }
+
+    .intro-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 10vh;
+        padding: 10vh 0;
+        color: black;
+        background-color: white; }
+    
+        .my-photo {
+            height: 250px; 
+            width: 250px;
+            max-height: 50vh;
+            max-width: 75vw;
+            border: 4px solid orange;
+            border-radius: 50%; }
+            
+        .main-intro {
+            text-align: justify;
+            margin: 0 5vw;
+            padding: 5vw;
+            font-family: var(--primary-font), serif;
+            border-top: 4px solid orange;
+            border-left: 4px solid orange;
+            border-right: 1px solid rgba(10, 73, 118, 1);
+            border-bottom: 1px solid rgba(10, 73, 118, 1);
+            box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1); }   
+        .main-intro::first-letter {
+            font-size: 2rem;
+            padding-left: 10vw; }
+
+    .lists-container {
+        display: flex;
+        flex-direction: column;
+        margin: 10vh 0;
+        gap: 10vh;
+        color: var(--foreground-secondary); }
+
+        .education {
+            font-family: var(--title-font-secondary), sans-serif; }
+
+            .education-title {
+                width: 100%;
+                font-size: 2rem;
+                font-weight: bold;
+                color: var(--foreground-primary); }
+
+            .education-list {
+                list-style-type: disc;
+                margin-left: 10vw;}
+
+        .programming-lang-list-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: var(--foreground-secondary); }
+
+            .list-title{
+                width: 100%;
+                font-size: 2rem;
+                font-weight: bold;
+                font-family: var(--title-font-secondary), sans-serif;
+                color: var(--foreground-primary); }
+
+            .progrmaming-lang-list {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                width: 100%;
+                height: 100%; }
+
+            .programming-lang-list li {
+                display: flex;
+                align-items: center;
+                height: 10vh;
+                gap: 2.5vw; }
+
+                .programming-lang-icon {
+                    margin-left: 5vw;
+                    font-size: 2rem; }
+                    
+                .programming-lang-icon:hover {
+                    color: white; }
+                
+                .programming-lang-title {
+                    text-align: center;
+                    align-self: center; }
+
+    .skills-container {
+        display: flex;
+        flex-direction: column; }
+
+        .skill-list {
+            margin: 5vh 10vw 0 10vw;
+            display: flex;
+            list-style-type: disc;
+            flex-direction: column;
+            gap: 2vh; }
+
+@media (orientation: landscape){
+    header {
+        height: 100vh; }
+    .header-main {
+        margin: 0; }
+    .navbar-title {
+        padding: 1%; }
+    main {
+        margin: 0 25%;
+    }
+}

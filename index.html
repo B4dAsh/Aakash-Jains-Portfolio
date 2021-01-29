@@ -3,12 +3,18 @@
   <head>
   
 		<meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial scale=1.0">
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
     <title>Portfolio of Aakash Jain.</title>
     
 		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" type="text/css" href="header.css">
+		<link rel="stylesheet" type="text/css" href="main.css">
+		<link rel="stylesheet" type="text/css" href="footer.css">
 		<link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap" rel="stylesheet">
 
     <script src="script.js"></script>
     <script async src="https://kit.fontawesome.com/7ae16fe407.js" crossorigin="anonymous"></script>
@@ -23,26 +29,33 @@
 	</head>
 	<body id="body">
 
-		<header>
+		<header id="header">
 
 			<nav class="navbar">
-        <h3 class="navbar-title">Aakash Jain</h3>
-				<button class="hamburger-btn" onclick="openHamburger()">
-					<i class="fas fa-bars"></i>
+        <h2 class="navbar-title">Aakash Jain.</h2>
+        <button class="hamburger-btn" onclick="openHamburger()">
+          <span class="hamburger-btn-dash"></span>
         </button>
-        <div id="hamburger-menu" class="hamburger-menu">
-          <span>this</span>
-          <span>is</span>
-          <span>a</span>
-          <span>hamburger</span>
-          <span>menu.</span>
-        </div>
-			</nav>
+      </nav>
+      
+      <!-- TODO -->
+      <div id="hamburger-menu" class="hamburger-menu">
+        <a href="#header">Home</a>
+        <a href="#main">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#footer">Contact</a>
+      </div>
 
 			<div class="header-main">
-				<h1 class="header-intro-title">HEY, I'M ASH!</h1>
-				<h3>Welcome to my Website.</h3>
-				<a href="#main"><input type="button" class="header-button" value="Take a Tour"/></a>
+				<div class="header-main-title">
+					<p class="header-intro-title-hey">HEY!</p>
+					<p class="header-intro-title-im-ash">I'M ASH.</p>
+					<p class="header-intro-title-welcome">Welcome to my Portfolio.</p>
+				</div>
+				<div class="header-main-button-container">
+					<a class="header-main-button" href="#main">Take a Tour</a>
+					<a class="header-main-button" href="#footer">Contact Me</a>
+				</div>
 			</div>
 
 		</header>
@@ -50,123 +63,157 @@
 		<main id="main">
 
 			<div class="intro-container">
-				<div class="photo-container">
-					<img class="my-photo" src="images/my-img1.jpg" alt="Unable to Load"/>
-                </div>
+        <img class="my-photo" src="images/my-img1.jpg" alt="Unable to Load"/>
+        <div class="main-intro">
+          <p>I am a second year CS grad student and an aspiring Full stack web developer. I'm also very passionate about Android-dev, Pentesting, Data-Science and cutting edge tech like Machine Learning, AI, AR & VR and would like to learn and explore them in near future.</p>
+          <p>Besides Computer Science, I hold my interests in Maths, Astronomy, Human-Psycology, Philosophy, Literature & Various Mythologies (Yeah, I'm a Nerd!) 
+          and can go on a rant about them for hours at end.</p>
+          <p>In my spare time I daydream :p, watch movies, series & animes, play chess, read fiction, listen quality alt-rock & punk.</p>
+        </div>
+      </div>
 
-                <div class="main-intro">
-                    <p>I am second year CS grad student and following is the list of what I've learnt so far, along with this I am highly curious about Android-dev, Pentesting/Ethical Hacking, Data-Science and furthormore cutting edge tech like Machine Learning & AI along with Augmented & Virtual Realities.</p>
-                    <p>Besides Computer Science, I'm interested in Maths, Astrophysics, Cosmology, Human-Psycology, Philosophy, Literature & Various Mythologies. Yeah, I'm a Nerd!</p>
-                    <p>In my spare time I daydream :p, watch movies & animes, read fiction, listen quality rock, metal & punk.</p>
-                </div>
-            </div>
+			<div class="lists-container">
 
-            <hr class="intro-list-divider"/>
+        <div class="education">
+          <span class="education-title">Education.</span>
+              <ul class="education-list">
+                <li>
+                  <span>North Maharashtra University. (Graduation)</span>
+                  <span>BCA.(Bachelor in Computer Applications) 2019-2022</span>
+                </li>
+                <li>
+                  <span>Harvard's CS50x. (Class of 2020)</span>
+                </li>
+              </ul>
+        </div>
+  
+				<div id="skills" class="programming-lang-list-container">
+          <span class="list-title">Programming Languages.</span>
+          <ul class="programming-lang-list">
+            <li>
+              <i class="fab fa-python programming-lang-icon"></i>
+              <span class="programming-lang-title">Python3.</span>
+            </li>
+            <li>
+              <i class="fab fa-js programming-lang-icon"></i>
+              <span class="programming-lang-title">Vanilla Javascript.</span>
+            </li>
+            <li>
+              <i class="fab fa-html5 programming-lang-icon"></i>
+              <span class="programming-lang-title">HTML5.</span>
+            </li>
+            <li>
+              <i class="fab fa-css3-alt programming-lang-icon"></i>
+              <span class="programming-lang-title">CSS3.</span>
+            </li>
+            <li>
+              <i class="fab fa-java programming-lang-icon"></i>
+              <span class="programming-lang-title">Java 8.</span>
+            </li>
+            <li>
+              <i class="fab fa-cuttlefish programming-lang-icon"></i>
+              <span class="programming-lang-title">C, C++.</span>
+            </li>
+            <li>
+              <i class="fas fa-database programming-lang-icon"></i>
+              <span class="programming-lang-title">SQL. (MySQL, Sqlite3)</span>
+            </li>
+            <li>
+              <i class="fas fa-forward programming-lang-icon"></i>
+              <span class="programming-lang-title">Typescript, C#, Golang. (Limited)</span>
+            </li>
+          </ul>
+				</div>
+						
+				<div class="programming-lang-list-container">
+          <span class="list-title">Technologies/Tools.</span>
+          <ul class="programming-lang-list">
+            <li>
+              <i class="fab fa-node programming-lang-icon"></i>
+              <span class="programming-lang-title">Node.js</span>
+            </li>
+            <li>
+              <i class="fab fa-bootstrap programming-lang-icon"></i>
+              <span class="programming-lang-title">Bootstrap, Emmet, JSON.</span>
+            </li>
+            <li>
+              <i class="fas fa-flask programming-lang-icon"></i>
+              <span class="programming-lang-title">Flask, Django, Tkinter.</span>
+            </li>
+            <li>
+              <i class="fab fa-git programming-lang-icon"></i>
+              <span class="programming-lang-title">Git CLI, GitHub.</span>
+            </li>
+            <li>
+              <i class="fab fa-linux programming-lang-icon"></i>
+              <span class="programming-lang-title">Ubuntu, ElementaryOS, Kali.</span>
+            </li>
+            <li>
+              <i class="fab fa-react programming-lang-icon"></i>
+              <span class="programming-lang-title">React.js, jQuery, .NET. (Limited) </span>
+            </li>
+            <li>
+              <i class="fab fa-figma programming-lang-icon"></i>
+              <span class="programming-lang-title">Figma, Adobe Photoshop.</span>
+            </li>
+            <li>
+              <i class="fas fa-file-powerpoint programming-lang-icon"></i>
+              <span class="programming-lang-title">MS Office.</span>
+            </li>
+          </ul>
+				</div>
 
-            <div class="academic-qualifications">
-                <div class="academic-qualifications-title">Academic Qualifications</div>
-                <ul>
-                    <li>North Maharashtra University (Graduation)
-                        <ul type="disc"><li>BCA (Bachelor in Computer Applications). 2019-2022</li></ul>
-                    </li>
-                    <li>Other-
-                        <ul type="disc">
-                            <li>Harvard's CS50x. (Class of 2020)</li>
-                            <li>Harvard's CS50Web. (In Progress)</li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
+				<div class="skills-container">
+          <span class="list-title">Skills</span>
+          <ul class="skill-list">
+            <li>Great at finding algorithmic solutions of coding problems with optimum efficiency.</li>
+            <li>Loves challanges, Absolutely loves to learn. Can pickup new lanuages/tech in just a matter of minutes.</li>
+            <li>Can quickly create and demonstrate User Interfaces in Figma.</li>
+            <li>Proficient at working with REST APIs.</li>
+            <li>Knows about basic of hosting & deploying on remote servers.</li>
+            <li>Proficient in Linux family shells including but not limited to sh, bash, zsh & fish.</li>
+            <li>Multilangual. Can speak multiple language namely English, Hindi, Marathi, Gujrathi fluently.</li>
+          </ul>
+        </div>
 
-            <hr class="intro-list-divider"/>
 
-            <div class="list-container">
+      </div>
 
-                <div class="programming-langs">
-                    <div class="main-list-titles">Programming Languages.</div>
-                    <ul type="disc" class="programming-langs-list">
-                        <li>HTML5. (w/ Emmet)</li>
-                        <li>CSS3. </li>
-                        <li>VanillaJS. (ES8)</li>
-                        <li>Python3. (w/ Django, Tkinter, Numpy & Sqlite3)</li>
-                        <li>Java.</li>
-                        <li>C.</li>
-                        <li>C++.</li>
-                        <li>SQL. (Sqlite3)</>
-                        <li>Typescript. (Limited)</li>
-                        <li>Bash. (Limited)</li>
-                        <li>Shell. (Limited)</li>
-                        <li>& Finally, Scratch. :p</li>
-                    </ul>
-                </div>
+		</main>
 
-                <div class="techs">
-                    <div class="main-list-titles">Technologies/Tools.</div>
-                    <ul type="disc" class="techs-list">
-                        <li>Emmet.</li>
-                        <li>Bootstrap.</li>
-                        <li>Node.js.</li>
-                        <li>JSON.</li>
-                        <li>Django.</li>
-                        <li>Tkinter.</li>
-                        <li>Sqlite3.</li>
-                        <li>Git & GitHub.</li>
-                        <li>Netlify.</li>
-                        <li>CLIs. (GitBash, Powershell, WindowsCMD)</li>
-                        <li>Linux. (Kali, Debian, Ubuntu, ParrotOS)</li>
-                        <li>Adobe Photoshop.</li>
-                        <li>MS-Office.</li>
-                        <li>jQuery. (Limited)</li>
-                        <li>.NET. (Limited)</li>
-                        <li>Flask. (Limited)</li>
-                        <li>Vim. (Limited)</li>
-                    </ul>
-                </div>
+		<footer id="footer">
 
-                <div class="hobbies">
-                    <div class="main-list-titles">Achievements/Hobbies.</div>
-                    <ul type="disc" class="hobbies-list">
-                        <li>Humor Writing</li>
-                        <li>Kickboxing</li>
-                        <li>Reading</li>
-                        <li>Watching Movies</li>
-                        <li>Loves Listening to Soft/Hard-Rock, Metal, Punk.</li>
-                        <li>Best Time on 3x3 Rubix Cube <strong>2:43</strong></li>
-                    </ul>
-                </div>
+      
+      <div class="footer-nav-container">
 
-                <div class="langs">
-                    <div class="main-list-titles">Languages.</div>
-                    <ul class="langs-list">
-                        <li>English. (Daily Use)</li>
-                        <li>Hindi. (Daily Use)</li>
-                        <li>Marathi. (Mother Tongue)</li>
-                        <li>Gujrathi. (Survivable)</li>
-                    </ul>
-                </div>
+        <div class="footer-nav">
 
-            </div>
+          <span class="nav-title">Contact.</span>
 
-        </main>
+          <nav class="nav-icons">
+            <a href="mailto:aakashjainofficial@gmail.com"><i class="fas fa-envelope"></i></a>
+            <a href="https://www.linkedin.com/in/aakashjainofficial/"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100008852703052"><i class="fab fa-facebook-square"></i></a>
+            <a href="https://www.instagram.com/_.badash._/"><i class="fab fa-instagram-square"></i></a>
+            <a href="https://twitter.com/__BadAsh__"><i class="fab fa-twitter-square"></i></a>
+            <a href="https://github.com/BadAsh212"><i class="fab fa-github-square"></i></a>
+          </nav>
 
-        <footer>
+        </div>
 
-            <h6>My Social-media links are below, Feel free to hit 'em up :).</h6>
+        <span class="footer-quote">You are not your stupid portfolio. - Tyler Durden, Fight club.</span>
 
-            <nav>
-                <i href="#" class="fa fab-facebook"></i>
-                <i href="#" class="InstagramButton"></i>
-                <i href="#" class="TwitterButton"></i>
-                <i href="#" class="LinkedInButton"></i>
-                <i href="#" class="RedditButton"></i>
-                <i href="#" class="PintrestButton"></i>
-            </nav>
+      </div>
+    
+      <hr class="footer-hr">
+ 
+      <div class="outro">
 
-            <div class="EndText">
-                 <h6>Made with Love and Caffiene @ Dhule, MH.</h6>
-            </div>
+        <span class="legal">©Aakash Jain. All rights reserved.</span>
+        <span class="footer-end-text">Made with Love and Caffiene @ Dhule, MH.</span>
 
-        </footer>
+      </div>
 
-    </body>
+    </footer>
+	</body>
 </html>

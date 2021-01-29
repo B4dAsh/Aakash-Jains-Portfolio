@@ -1,0 +1,145 @@
+header {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: var(--background-primary); }
+    /* background-image: linear-gradient(to right, var(--background-primary), var(--background-secondary)); */
+
+.navbar {
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 5vh;
+    width: 100%;
+    background-color: var(--background-primary);
+    z-index: 5;
+    overflow: hidden;
+    border-left: 3px solid var(--foreground-primary); }
+
+    .navbar-title {
+        align-self: center; 
+        margin: 0;
+        padding: 0 2.5%;
+        color: var(--foreground-primary);
+        font-size: 1.5rem;
+        font-family: var(--title-font-secondary), cursive; }
+
+    .hamburger-btn {
+        position: relative;
+        float: right;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 50px;
+        color: var(--background-primary);
+        background-color: white;
+        border: none;
+        cursor: pointer; }
+
+        .hamburger-btn-dash {
+            display: flex;
+            align-content: center;
+            justify-content: center;
+            height: 2.5px;
+            background: black;
+            width: 70%; }
+
+        .hamburger-btn-dash::before,
+        .hamburger-btn-dash::after {
+            content: '';
+            position: absolute;
+            width: 70%;
+            height: 2.5px;
+            background: black;
+            transform: translateY(-10px);
+        }
+
+        .hamburger-btn-dash::after {
+            transform: translateY(10px); }
+
+        .hamburger-btn
+
+    .hamburger-btn:hover {
+        opacity: 0.5;
+        transform: transalteY(90deg);
+        box-shadow: none;
+    }
+
+    .hamburger-menu {
+        display: none;
+        visibility: hidden; }
+
+    .menu-opened {
+        position: absolute;
+        z-index: 5;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        visibility: visible !important; /**/
+        font-family: var(--title-font-secondary);
+        text-decoration: none;
+        height: 100%;
+        width: 100%;
+        font-size: 3rem;
+        color: var(--background-primary);
+        border-bottom: 10px solid teal;
+        background-color: var(--foreground-secondary); }
+
+.header-main {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin-top: -5vh;
+    margin-bottom: 5vh;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+    text-align: left;
+    background-color: var(--background-primary);
+    font-family: var(--title-font-secondary), serif; }
+
+    .header-main-title {
+        justify-content: space-evenly;
+        color: var(--foreground-secondary); }
+        .header-intro-title-hey {
+            font-weight: bold;
+            font-family: var(--title-font-primary);
+            font-size: 2.5rem; }
+        .header-intro-title-im-ash {
+            font-family: var(--title-font-primary);
+            font-size: 2rem; }
+        .header-intro-title-welcome {
+            font-family: var(--title-font-tertiary);
+            font-size: 1.5rem; }
+        
+    .header-main-button-container {
+        font-family: "Pacifico";
+        display: flex;
+        flex-direction: column;
+        height: 25vh;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center; }
+        
+        .header-main-button {
+            height: 7.5vh;
+            width: 60vw;
+            color: black;
+            border-radius: 40px;
+            padding-top: 5px;
+            text-decoration: none;
+            /* background-image: linear-gradient(to right, var(--foreground-primary), var(--foreground-secondary)); */
+            background-color: var(--foreground-primary);
+            border: 4px solid white;
+            transition: 0.3 ease-out;
+            box-shadow: none;
+            font-size: 1.25rem;
+            cursor: pointer; }
+
+        .header-main-button:hover {
+            opacity: 0.75; }
