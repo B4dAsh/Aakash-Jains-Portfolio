@@ -6,6 +6,7 @@ footer{
     color: white;
     font-family: var(--primary-font), serif;
     background-color: rgba(0, 0, 0, 1);
+    background-image: linear-gradient(to bottom, #e23e57, #88304e, #522546, #311d3f);
     text-align: center;
     border-top: 3px solid var(--foreground-secondary);
     border-bottom: 3px solid var(--foreground-secondary); }
@@ -37,8 +38,7 @@ footer{
                 .nav-icons > *:hover {
                     position: sticky;
                     font-size: 3rem;
-                    color: var(--foreground-secondary);
-                    opacity: 0.75; }
+                    color: var(--foreground-secondary); }
     
         .footer-quote {
             border: 5px solid white;

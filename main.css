@@ -5,7 +5,7 @@ main {
     justify-content: space-evenly;
     text-align: center;
     font-family: var(--primary-font), serif;
-    color: white;
+    color: var(--foreground-primary), white;
     background-color: var(--background-primary); }
 
     .intro-container {
@@ -45,16 +45,17 @@ main {
         flex-direction: column;
         margin: 10vh 0;
         gap: 10vh;
-        color: var(--foreground-secondary); }
+        color: var(--foreground-primary); }
 
         .education {
-            font-family: var(--title-font-secondary), sans-serif; }
+            font-family: var(--primary-font), sans-serif; }
 
             .education-title {
                 width: 100%;
                 font-size: 2rem;
                 font-weight: bold;
-                color: var(--foreground-primary); }
+                color: var(--foreground-secondary);
+                font-family: "Bebas Neue"; }
 
             .education-list {
                 list-style-type: disc;
@@ -65,14 +66,14 @@ main {
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            color: var(--foreground-secondary); }
+            color: var(--foreground-primary); }
 
             .list-title{
                 width: 100%;
                 font-size: 2rem;
                 font-weight: bold;
-                font-family: var(--title-font-secondary), sans-serif;
-                color: var(--foreground-primary); }
+                font-family: "Bebas Neue", sans-serif;
+                color: var(--foreground-secondary); }
 
             .progrmaming-lang-list {
                 display: flex;
@@ -112,13 +113,17 @@ main {
             gap: 2vh; }
 
 @media (orientation: landscape){
-    header {
-        height: 100vh; }
-    .header-main {
-        margin: 0; }
-    .navbar-title {
-        padding: 1%; }
-    main {
-        margin: 0 25%;
+    .lists-container {
+        display: grid;
+        align-content: center;
+        justify-content: center;
+        text-align: center;
+        grid-template-rows: auto auto auto;
+        grid-template-columns: 50% 50%;
     }
+        
+        .education, .skills-container, .certifications-container {
+            grid-column: 1/ 3;
+        }
+
 }

@@ -1,12 +1,12 @@
 :root {
-    --foreground-primary:#ec4646;
-    --foreground-secondary: #ffe227;
-    --background-primary: #252525;
-    --background-secondary: #0a043c;
-    --title-font-primary: "Roboto Slab";
-    --title-font-secondary: "Pacifico"; 
-    --primary-font: "Poppins";
-    --secondary-font: "Grenze Gotisch"; }
+    --primary-font: "Poppins"; /* Sans serif. */
+    --title-font-primary: "Bebas Neue"; /* Sans serif. */
+    --title-font-secondary: "Pacifico"; /* Cursive. */
+
+    --foreground-primary:#fbe8d3;
+    --foreground-secondary: #f85f73;
+    --background-primary: #2b2e4a;
+    --background-secondary: #522546; }
 
 * {
     /* border: 0.1px solid white;  */
@@ -32,3 +32,15 @@ a {
 
 ul {
     list-style: none; }
+
+/*
+    --foreground-primary:#ec4646;
+    --foreground-secondary: #ffe227;
+    --foreground-secondary: #f85f73;
+    
+    --background-primary: #252525;
+
+    --background-secondary: #0a043c;
+    --background-secondary: #522546;
+
+*/
