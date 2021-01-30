@@ -10,7 +10,6 @@ function openHamburger(hamburger) {
     } else {
         hamburger = document.getElementById("hamburger-menu");
         hamburger.classList.remove("menu-opened");
-        document.getElementById("body").style.overflow = "initial";
         menuOpen = false;
     }
 
