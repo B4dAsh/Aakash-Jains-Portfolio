@@ -12,42 +12,52 @@ footer{
     border-bottom: 3px solid var(--foreground-secondary); }
 
     .footer-nav-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         height: 75%; }
 
         .footer-nav {
             display: flex;
             flex-direction: column;
             justify-content: center;
-            height: 75%;
-        }
+            height: 75%; }
 
             .nav-title {
                 font-size: 2.5rem;
                 opacity: 0.9;
                 text-align: center; }
 
-            .nav-icons {
+            .nav-icons-container {
                 display: flex;
                 justify-content: center;
                 gap: 20px;
                 font-size: 2.5rem; }
             
-                .nav-icons > * {
-                    cursor: pointer; }
+                .nav-icons {
+					position: relative; }
 
-                .nav-icons > *:hover {
-                    position: sticky;
+                .nav-icons a:hover {
+					position: absolute;
+					cursor: pointer;
                     font-size: 3rem;
                     color: var(--foreground-secondary); }
     
         .footer-quote {
-            border: 5px solid white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-self: center;
             margin: 0 5vw;
             padding: 2vh 3vw;
             color:rgba(255, 255, 255, 0.75);
+            border: 5px solid white;
             border-radius: 5%; }
     
     .outro {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
         height: 10%; }
 
         .legal {

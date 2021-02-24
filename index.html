@@ -6,17 +6,17 @@
     <meta name="viewport" content="width=device-width, initial scale=1.0">
     <title>Portfolio of Aakash Jain.</title>
     
-		<link rel="stylesheet" type="text/css" href="style.css">
-		<link rel="stylesheet" type="text/css" href="header.css">
-		<link rel="stylesheet" type="text/css" href="main.css">
-		<link rel="stylesheet" type="text/css" href="footer.css">
+		<link rel="stylesheet" type="text/css" href="./css/style.css">
+		<link rel="stylesheet" type="text/css" href="./css/header.css">
+		<link rel="stylesheet" type="text/css" href="./css/main.css">
+		<link rel="stylesheet" type="text/css" href="./css/footer.css">
 		<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 		<link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"> 
 
-    <script src="script.js"></script>
+    <script src="./scripts/script.js"></script>
     <script async src="https://kit.fontawesome.com/7ae16fe407.js" crossorigin="anonymous"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-81EBXREQN6"></script>
     <script>
@@ -32,14 +32,14 @@
 		<header id="header">
 
 			<nav id="navbar" class="navbar">
-        <h2 class="navbar-title"><a href="#header">Aakash Jain.</a></h2>
+        <h2 class="navbar-title"><a href="index.html">Aakash Jain.</a></h2>
         <button class="hamburger-btn" onclick="openHamburger()">
           <span class="hamburger-btn-dash"></span>
         </button>
       </nav>
       
       <div id="hamburger-menu" class="hamburger-menu">
-        <a href="#header">Home</a>
+        <a href="index.html">Home</a>
         <a href="#main">About</a>
         <a href="#skills">Skills</a>
         <a href="#footer">Contact</a>
@@ -47,12 +47,13 @@
 
 			<div class="header-main">
 				<div class="header-main-title">
-					<p class="header-intro-title-hey">HEY! 👋</p>
+					<p class="header-intro-title-hey">HEY! <span class="header-intro-title-emoji">👋</span></p>
 					<p class="header-intro-title-im-ash">I'M ASH.</p>
 					<p class="header-intro-title-welcome">Welcome to my Portfolio.</p>
 				</div>
 				<div class="header-main-button-container">
-					<a class="header-main-button" href="#main">Take a Tour</a>
+          <a class="header-main-button" href="#main">Take a Tour</a>
+          <span class="header-main-button-divider">-or-</span>
 					<a class="header-main-button" href="#footer">Contact Me</a>
 				</div>
 			</div>
@@ -67,24 +68,34 @@
           <p>I am a second year CS grad student and an aspiring Full stack web developer. While being very passionate about Web developement, I'm also highly curious about Pentesting, Data-Science and cutting edge tech like Machine Learning, AI, AR & VR and would like to hopefully learn and explore them in near future.</p>
           <p>Besides Computer Science, I hold my interests in Maths, Astronomy, Human-Psycology, Philosophy & Literature (Yeah, I'm a Nerd!) 
           and can go on a rant about them for hours at end.</p>
-          <p>In my spare time I daydream :p, watch movies, series & animes, play chess, read fiction, listen quality alt-rock & punk.</p>
+          <p>In my spare time I daydream :D, watch movies (I'm a huge Nolanist), series & animes, play chess, read fiction, listen quality alt-rock & punk.</p>
         </div>
       </div>
 
-			<div class="lists-container">
+      <div class="formal-info-container">
 
-        <div class="education">
-          <span class="education-title">Education.</span>
-              <ul class="education-list">
-                <li>
-                  <span>North Maharashtra University. (Graduation)</span>
-                  <span>BCA.(Bachelor in Computer Applications) 2019-2022</span>
-                </li>
-                <li>
-                  <span>Harvard's CS50x. (Class of 2020)</span>
-                </li>
-              </ul>
+        <div class="education-container">
+          <span class="list-title">Education.</span>
+
+          <ul class="education-list">
+            <li>
+                <span>North Maharashtra University. (Graduation)</span>
+                <span>BCA.(Bachelor in Computer Applications) 2019-2022</span>
+            </li>
+            <li>
+                <span>Harvard's CS50x. (Class of 2020)</span>
+            </li>
+          </ul>
         </div>
+
+        <div class="resume-container">
+          <span class="list-title">Hiring?</span>
+          <a class="resume-btn" href="./assets/resume1.pdf" download="Aakash's Resume.pdf"><span>Here's My Resume.</span></a>
+        </div>
+
+      </div>
+
+			<div class="lists-container">
   
 				<div id="skills" class="programming-lang-list-container">
           <span class="list-title">Programming Languages.</span>
@@ -189,13 +200,13 @@
 
           <span class="nav-title">Contact.</span>
 
-          <nav class="nav-icons">
-            <a href="mailto:aakashjainofficial@gmail.com"><i class="fas fa-envelope"></i></a>
-            <a href="https://www.linkedin.com/in/aakashjainofficial/"><i class="fab fa-linkedin"></i></a>
-            <a href="https://www.facebook.com/profile.php?id=100008852703052"><i class="fab fa-facebook-square"></i></a>
-            <a href="https://www.instagram.com/_.badash._/"><i class="fab fa-instagram-square"></i></a>
-            <a href="https://twitter.com/__BadAsh__"><i class="fab fa-twitter-square"></i></a>
-            <a href="https://github.com/BadAsh212"><i class="fab fa-github-square"></i></a>
+          <nav class="nav-icons-container">
+            <div class="nav-icon"><a href="mailto:aakashjainofficial@gmail.com"><i class="fas fa-envelope"></i></a></div>
+            <div class="nav-icon"><a href="https://www.linkedin.com/in/aakashjainofficial/"><i class="fab fa-linkedin"></i></a></div>
+            <div class="nav-icon"><a href="https://www.facebook.com/profile.php?id=100008852703052"><i class="fab fa-facebook-square"></i></a></div>
+            <div class="nav-icon"><a href="https://www.instagram.com/_.badash._/"><i class="fab fa-instagram-square"></i></a></div>
+            <div class="nav-icon"><a href="https://twitter.com/__BadAsh__"><i class="fab fa-twitter-square"></i></a></div>
+            <div class="nav-icon"><a href="https://github.com/B4dAsh"><i class="fab fa-github-square"></i></a></div>
           </nav>
 
         </div>
