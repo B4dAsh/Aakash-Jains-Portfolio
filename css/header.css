@@ -4,20 +4,19 @@ header {
     height: 100vh;
     width: 100%;
     background-color: var(--background-primary), black; }
-    /* background-image: linear-gradient(to right, var(--background-primary), var(--background-secondary)); or radical-gradient()*/
 
 .navbar {
     position: sticky;
     top: 0;
     display: flex;
-    flex-direction: rows;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
     overflow: hidden;
     height: 5vh;
-    width: 100%;
-    background-color: var(--background-primary);
-    z-index: 5;
+    width: 100vw;
+    background-color: transparent;
+    z-index: 2;
     border-left: 3px solid var(--foreground-primary); }
 
     .navbar-title {
@@ -38,22 +37,19 @@ header {
         align-items: center;
         height: 100%;
         width: 50px;
-        color: var(--background-primary);
-        background-color: var(--background-primary);
-        border: none;
-        cursor: pointer; }
+        background-color: var(--foreground-primary);
+        border: 0.5px solid var(--foreground-primary);
+        cursor: pointer;
+        transition: all 2s ease; }
     .hamburger-btn:hover {
-        opacity: 0.5;
-        transform: transalteY(90deg);
-        box-shadow: none; }
-    
+        opacity: 0.9; }
 
         .hamburger-btn-dash {
             display: flex;
             align-content: center;
             justify-content: center;
             height: 2.5px;
-            background: var(--foreground-primary);
+            background: var(--background-primary);
             width: 70%; }
         .hamburger-btn-dash::before,
         .hamburger-btn-dash::after {
@@ -61,11 +57,11 @@ header {
             position: absolute;
             width: 70%;
             height: 2.5px;
-            background: var(--foreground-primary);
+            background: var(--background-primary);
             transform: translateY(-10px); }
         .hamburger-btn-dash::after {
             transform: translateY(10px); }
-    
+
     .hamburger-menu {
         display: none;
         visibility: hidden; }
@@ -82,9 +78,9 @@ header {
         height: 110%;
         width: 100%;
         font-size: 3rem;
-        color: var(--background-primary);
+        color: var(--foreground-primary);
+        background-color: var(--background-primary);
         border-bottom: 10px solid teal;
-        background-color: var(--foreground-secondary);
         z-index: 5; }
 
 .header-main {
@@ -99,7 +95,13 @@ header {
     text-align: left;
     background-color: var(--background-primary);
     background-image: radial-gradient(#e23e57, #88304e, #522546, #522546);
+    animation: header-background 1s ease 0ms infinite normal;
     font-family: var(--title-font-secondary), serif; }
+    @keyframes header-background {
+        0% { background: radial-gradient(#e23e57, #88304e, #522546, #522546); }
+        33% { background: radial-gradient(#e23e57, #e23e57, #88304e, #522546); }
+        66% { background: radial-gradient(#e23e57, #e23e57, #88304e, #522546, #522546);}
+        100% { background: radial-gradient(#e23e57, #88304e, #522546, #522546); } }
 
     .header-main-title {
         justify-content: space-evenly;
@@ -150,8 +152,9 @@ header {
             box-shadow: none;
             font-size: 1.5rem;
             cursor: pointer;
-            transition: all 1s ease; }
+            transition: all 0.5s ease; }
         .header-main-button:hover {
+            transform: scale(1.1);
             opacity: 0.75; }
         
 
