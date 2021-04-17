@@ -12,7 +12,8 @@
     /* border: 0.1px solid white;  */
     margin: 0;
     padding: 0;
-    box-sizing: border-box; }
+    box-sizing: border-box;
+    scroll-behavior: smooth; }
 
 body {
     display: flex;
@@ -21,8 +22,7 @@ body {
     justify-content: space-evenly;
     color: white;
     background-color: black;
-    font-family: var(--primary-font), sans-serif;
-    scroll-behavior: smooth; }
+    font-family: var(--primary-font), sans-serif; }
 
 span, i {
     display: inline-block; }
