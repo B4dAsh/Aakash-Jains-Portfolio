@@ -40,7 +40,7 @@ footer{
                     transform: scale(1.2);
 					cursor: pointer;
                     font-size: 3rem;
-                    color: var(--foreground-secondary); }
+                    color: var(--hover-color); }
     
         .footer-quote {
             display: flex;
