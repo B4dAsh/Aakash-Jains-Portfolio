@@ -76,7 +76,7 @@ main {
 					display: flex;
 					flex-direction: column;
 					text-align: left;
-					margin: 0 0 0 5vw; }
+					margin: 0 0 0 7.5vw; }
 
 					.education-list-uni-title {	
 						flex-direction: column;
@@ -110,7 +110,11 @@ main {
 					width: 10vh;
 					font-size: 3rem;
 					color: var(--foreground-primary);
-					background-color: var(--background-primary); }
+					background-color: var(--background-primary) !important;
+                    transition: all 0.3s ease; }
+                .certification-icon-container:hover {
+                    color: var(--hover-color); }
+                
 
 				.certification-entry-info-container {
 					width: 80vw;
@@ -130,118 +134,133 @@ main {
 						opacity: 0.75;
 						text-decoration: underline; }
 
+    .secondary-info-container {
+        display: flex;
+        flex-direction: column;
+        margin: 3vh 0 10vh 0;
+        gap: 4vh;
+        color: var(--foreground-primary); 
+        overflow: hidden; }
+
+        .lists-container {
+            display: flex;
+            flex-direction: column;
+            gap: 3vh;
+            color: var(--foreground-primary); 
+            overflow: hidden; }
+
+            .lists-container * {
+                max-width: 100%;
+                max-height: 100%; }
+
+            .info-title {
+                font-size: 2.2rem;
+                font-family: var(--title-font-secondary);
+                text-align: center; }
+
+            .programming-lang-list-container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                color: var(--foreground-primary); }
+
+                .list-title {
+                    width: 100%;
+                    font-size: 2rem;
+                    font-weight: bold;
+                    font-family: var(--title-font-primary);
+                    color: var(--foreground-secondary); }
+
+                .progrmaming-lang-list {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                    width: 100%;
+                    height: 100%; }
+
+                    .programming-lang-list li {
+                        display: flex;
+                        align-items: center;
+                        height: 10vh;
+                        gap: 2.5vw; }
+
+                        .programming-lang-icon {
+                            margin-left: 5vw;
+                            font-size: 2rem; }
+                            
+                        .programming-lang-icon:hover {
+                            color: white; }
+                        
+                        .programming-lang-title {
+                            text-align: center;
+                            align-self: center; }
+
+            .skills-container {
+                display: flex;
+                flex-direction: column; }
+
+                .skills-list {
+                    display: flex;
+                    list-style-type: disc;
+                    flex-direction: column;
+                    gap: 2vh;
+                    margin: 3vh 10vw; }
+
         .resume-container {
             position: relative;
             display: flex;
             flex-direction: column;
             justify-content: space-evenly;
-            width: 100%; }
-        
+            width: 100%;
+            height: 50%;
+            gap: 3vh;
+            color: var(--foreground-primary);
+            background: var(--background-primary); }
+
+            .resume-container .info-title {
+
+            }
+
             .resume-btn {
                 display: flex;
                 flex-direction: column;
-				justify-content: center;
-				margin: auto;
-				height: 7.5vh;
-				width: 60vw;
-				border: 3px solid var(--background-primary);
-				border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
-				box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
-				transition: all 1s ease;
-				z-index: 2; }
-			.resume-btn:hover {
-				background-color: #00000010;
-				transform: scale(0.9);
-				box-shadow: none; }
-                    
-				.resume-btn span {
-					font-size: 1.2rem;
-					color: var(--background-primary);
-					text-transform: uppercase;
-					justify-content: center;
-					font-weight: bold;
-					text-align: center; }        
-
-    .lists-container {
-        display: flex;
-        flex-direction: column;
-        margin: 10vh 0;
-        gap: 10vh;
-        color: var(--foreground-primary); 
-        overflow: hidden; }
-
-        .lists-container * {
-            max-width: 100%;
-            max-height: 100%; }
-
-        .programming-lang-list-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            color: var(--foreground-primary); }
-
-            .list-title {
-                width: 100%;
-                font-size: 2rem;
-                font-weight: bold;
-                font-family: var(--title-font-primary);
-                color: var(--foreground-secondary); }
-
-            .progrmaming-lang-list {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
                 justify-content: center;
-                text-align: center;
-                width: 100%;
-                height: 100%; }
-
-                .programming-lang-list li {
-                    display: flex;
-                    align-items: center;
-                    height: 10vh;
-                    gap: 2.5vw; }
-
-                    .programming-lang-icon {
-                        margin-left: 5vw;
-                        font-size: 2rem; }
-                        
-                    .programming-lang-icon:hover {
-                        color: white; }
+                margin: auto;
+                height: 7.5vh;
+                width: 60vw;
+                background-color: var(--foreground-secondary);
+                border: 3px solid var(--foreground-primary);
+                border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+                box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+                transition: all 1s ease;
+                z-index: 2; }
+            .resume-btn:hover {
+                background-color: var(--hover-color);
+                transform: scale(0.9);
+                box-shadow: none; }
                     
-                    .programming-lang-title {
-                        text-align: center;
-                        align-self: center; }
+                .resume-btn span {
+                    font-size: 1.2rem;
+                    color: var(--background-primary);
+                    text-transform: uppercase;
+                    justify-content: center;
+                    font-weight: bold;
+                    text-align: center; }
 
-    .skills-container {
-        display: flex;
-        flex-direction: column; }
+        .resume-description {
+            margin: 0 2vw 0 5vw;
+            padding: 0 0 0 3vw;
+            text-align: left;
+            border-left: 2px solid var(--foreground-secondary);
+        }
 
-        .skill-list {
-            margin: 5vh 10vw 0 10vw;
-            display: flex;
-            list-style-type: disc;
-            flex-direction: column;
-            gap: 2vh; }
 
 @media (orientation: landscape) {
 
-    .lists-container {
-        display: grid;
-        align-content: center;
-        justify-content: center;
-        text-align: center;
-        grid-template-rows: auto auto auto;
-        grid-template-columns: 50% 50%;
-        max-width: 100%;
-        max-height: 100%;
-    }
-    
-    .certification-entry {
-        width: 50%; }
-
-    .education, .skills-container {
-        grid-column: 1/ 3; }
+        .certification-entry {
+            width: 50%; }
 
 }

@@ -39,9 +39,9 @@ header {
         background-color: var(--foreground-primary);
         border: 0.5px solid var(--foreground-primary);
         cursor: pointer;
-        transition: all 2s ease; }
+        transition: transform 2.0s ease; }
     .hamburger-btn:hover {
-        opacity: 0.9; }
+        background-color: var(--hover-color); }
 
         .hamburger-btn-dash {
             display: flex;
@@ -60,6 +60,9 @@ header {
             transform: translateY(-10px); }
         .hamburger-btn-dash::after {
             transform: translateY(10px); }
+        .hamubuger-btn-dash {
+            color: red;
+        }
 
     .hamburger-menu {
         display: none;
