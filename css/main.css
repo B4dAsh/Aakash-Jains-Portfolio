@@ -34,7 +34,7 @@ main {
             font-family: var(--primary-font), serif;
             text-align: center;
             line-height: 1.5rem; }
-        .main-intro::first-letter {
+        .main-intro span {
             font-size: 2rem;
             padding-left: 30px; }
 
