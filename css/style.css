@@ -35,6 +35,11 @@ a {
 ul {
     list-style: none; }
 
+::-webkit-selection,
+::selection {
+    color: var(--background-primary);
+    background-color: var(--hover-color); }
+
 @media(orientation: landscape) {
 }
 
