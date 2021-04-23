@@ -3,7 +3,7 @@
   <head>
   
 		<meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio of Aakash Jain.</title>
     
 		<link rel="stylesheet" type="text/css" href="./css/style.css">
@@ -11,12 +11,10 @@
 		<link rel="stylesheet" type="text/css" href="./css/main.css">
 		<link rel="stylesheet" type="text/css" href="./css/footer.css">
 		<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-		<link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
 
-    <script src="./scripts/script.js"></script>
     <script async src="https://kit.fontawesome.com/7ae16fe407.js" crossorigin="anonymous"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-81EBXREQN6"></script>
     <script>
@@ -28,36 +26,41 @@
 
 	</head>
 	<body id="body">
+    <nav id="navbar" class="navbar">
+      <h2 class="navbar-title">
+        <a href="index.html">Aakash Jain.</a>
+      </h2>
+
+      <button id="hamburger-btn" class="hamburger-btn" onclick="hamburger()">
+        <i class="fas fa-bars"></i>
+      </button>
+    </nav>
 
 		<header id="header">
-
-			<nav id="navbar" class="navbar">
-        <h2 class="navbar-title"><a href="index.html">Aakash Jain.</a></h2>
-        <button class="hamburger-btn" onclick="openHamburger()">
-          <span class="hamburger-btn-dash"></span>
-        </button>
-      </nav>
-      
-      <div id="hamburger-menu" class="hamburger-menu">
-        <a href="/">Home</a>
-        <a href="#main">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#footer">Contact</a>
+  
+      <div id="hamburger-menu-container" class="hamburger-menu-container">
+        <div class="hamburger-menu">
+          <a href="#header" onclick="hamburger()">Home</a>
+          <a href="#main" onclick="hamburger()">About</a>
+          <a href="#formal-info-container" onclick="hamburger()">Education</a>
+          <a href="#certifications-container" onclick="hamburger()">Certifications</a>
+          <a href="#secondary-info-container" onclick="hamburger()">Skills</a>
+          <a href="#footer" onclick="hamburger()">Contact</a>
+        </div>
       </div>
 
 			<div class="header-main">
-				<div class="header-main-title">
+				<div class="header-main-titles">
 					<p class="header-intro-title-hey">HEY! <span class="header-intro-title-emoji">👋</span></p>
 					<p class="header-intro-title-im-ash">I'M ASH.</p>
-					<p class="header-intro-title-welcome">Welcome to my Portfolio.</p>
+					<p class="header-intro-title-welcome">Welcome to my Portfolio!</p>
 				</div>
-				<div class="header-main-button-container">
-          <a class="header-main-button" href="#main">Take a Tour</a>
-          <span class="header-main-button-divider">-or-</span>
-					<a class="header-main-button" href="#footer">Contact Me</a>
+				<div class="header-main-btns-container">
+          <a class="header-main-btn" href="#main">Take a Tour</a>
+          <span class="header-main-btn-divider">-or-</span>
+					<a class="header-main-btn" href="#footer">Contact Me</a>
 				</div>
 			</div>
-
 		</header>
 
 		<main id="main">
@@ -65,13 +68,11 @@
 			<div class="intro-container">
         <img class="my-photo" src="images/my-img1.jpg" alt="Aakash Jain."/>
         <div class="main-intro">
-          <span>Hi!</span> I'm a CS grad student aiming to be Full stack web developer. I'm fascinated about Web technologies, Cybersecurity, Data-Science and Just about technology in general.
-          Apart from CS, I'm curious about Astronomy, Philosophy & Literature. I also have weird phases every now and then where I'm just constantly infatuated by a certain niche concept. 😁
-          In leisure time you can usually find me reading, daydreaming :D, consuming media content or headbanging over decades old alternative-rock or metal. 🎸</p>
+          <span>Hi!</span> I'm a CS grad student aiming to be Full stack web developer. I'm fascinated about Web technologies, Cybersecurity, Data-Science and Just about technology in general.Apart from CS, I'm curious about Astronomy, Philosophy & Literature. I also have "phases" every now and then where I'm just infatuated by a certain concept and I try to learn everything about it. 😁 In leisure time you can usually find me reading, daydreaming :D, consuming media content or headbanging over decades old alternative-rock or metal. 🎸</p>
         </div>
       </div>
 
-      <div class="formal-info-container">
+      <div id="formal-info-container" class="formal-info-container">
 
         <div class="education-container">
           <span class="list-title">Academic Qualifications.</span>
@@ -85,7 +86,7 @@
           </div>
         </div>
 
-        <div class="certifications-container">
+        <div id="certifications-container" class="certifications-container">
           <span class="list-title">Certifications.</span>
           <div class="certification-entry">
             <div class="certification-icon-container" style="background-color:#0a0a23"><i class="fab fa-free-code-camp"></i></div>
@@ -145,13 +146,13 @@
 
       </div>
 
-			<div class="secondary-info-container">
+			<div id="secondary-info-container" class="secondary-info-container">
 
         <div class="lists-container">
           
-          <span class="info-title">My Expertise: </span>
+          <span class="info-title">-My Expertise-</span>
           
-          <div id="skills" class="programming-lang-list-container">
+          <div class="programming-lang-list-container">
             <span class="list-title">Programming Languages</span>
             <ul class="programming-lang-list">
               <li>
@@ -286,5 +287,8 @@
       </div>
 
     </footer>
+
+    <script src="./scripts/script.js"></script>
+
 	</body>
 </html>

@@ -7,7 +7,10 @@
     --foreground-secondary: #f85f73;
     --background-primary: #2b2e4a;
     --background-secondary: #522546;
-    --hover-color: yellow; }
+    --background-tertiary: #114e60;
+    --hover-color: yellow; 
+
+    font-size: 16px; }
 
 * {
     /* border: 0.1px solid white;  */
@@ -16,13 +19,17 @@
     box-sizing: border-box;
     scroll-behavior: smooth; }
 
+    
+html {
+    scroll-padding-top: 5vh; }
+
 body {
     display: flex;
     flex-direction: column;
     align-self: center;
     justify-content: space-evenly;
-    color: white;
-    background-color: black;
+    color: var(--foreground-primary), white;
+    background-color: var(--background-primary), black;
     font-family: var(--primary-font), sans-serif; }
 
 span, i {
@@ -41,10 +48,14 @@ ul {
     background-color: var(--hover-color); }
 
 @media(orientation: landscape) {
+
+    :root {
+        font-size: 20px; }
+
 }
 
 /*
-    --foreground-primary:#ec4646;
+    --foreground-primary: #ec4646;
     --foreground-secondary: #ffe227;
     --foreground-secondary: #f85f73;
     
