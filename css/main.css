@@ -201,7 +201,6 @@ main {
 
                 .skills-list {
                     display: flex;
-                    list-style-type: disc;
                     flex-direction: column;
                     gap: 2vh;
                     margin: 3vh 10vw; }
@@ -218,6 +217,7 @@ main {
             background: var(--background-primary); }
 
             .resume-container .info-title {
+                font-family: var(--title-font-secondary);
                 color: var(--foreground-secondary); }
 
             .resume-btn {
