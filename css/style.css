@@ -27,8 +27,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    color: var(--foreground-primary), white;
-    background-color: var(--background-primary), black;
     font-family: var(--primary-font), sans-serif; }
 
 span, i {

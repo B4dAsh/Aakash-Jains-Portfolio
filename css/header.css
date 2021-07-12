@@ -39,7 +39,6 @@ header {
     padding: 0;
     height: 95vh;
     width: 100%;
-    background-color: var(--background-primary);
     transition: .5s; }
 
 .hamburger-menu-container {
@@ -83,13 +82,7 @@ header {
     text-align: left;
     font-family: var(--title-font-secondary), serif;
     color: var(--foreground-primary);
-    background-image: radial-gradient(#e23e57, #88304e, #522546, #522546);
-    animation: header-background 1s ease 0ms infinite normal; }
-    @keyframes header-background {
-        0% { background: radial-gradient(#e23e57, #88304e, #522546, #522546); }
-        33% { background: radial-gradient(#e23e57, #e23e57, #88304e, #522546); }
-        66% { background: radial-gradient(#e23e57, #e23e57, #88304e, #522546, #522546);}
-        100% { background: radial-gradient(#e23e57, #88304e, #522546, #522546); } }
+    background: url(../images/header-img.png) no-repeat center center fixed; }
         
     .header-main-titles {
         justify-content: space-evenly;
@@ -148,7 +141,7 @@ header {
 
 @media(orientation : landscape) {
 
-    .header-main-button {
+    .header-main-btn {
         width: 25vw;
     }
 
