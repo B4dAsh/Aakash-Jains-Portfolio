@@ -1,5 +1,5 @@
 html {
-    scroll-padding-top: 5vh; }
+    scroll-padding-top: calc(5vh - 1px); }
 
 .navbar {
     position: sticky;
@@ -96,7 +96,7 @@ header {
             font-size: 2.25em; }
             .header-intro-title-emoji {
                 font-style: normal;
-                animation: 4 0.25s ease-in alternate emoji; }
+                animation: emoji 200ms linear 1200ms 4 alternate; }
                 @keyframes emoji {
                     0% {transform: rotate(0deg); }
                     100% {transform: rotate(45deg); } }

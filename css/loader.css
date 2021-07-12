@@ -1,0 +1,54 @@
+.loader-container {
+    --background: radial-gradient(circle closest-corner at center, #303960, #301B3F);
+    --loader-large: #FFF5B7;
+    --loader-medium: #FF449F;
+    --loader-small: #00EAD3;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--background);
+    z-index: 10; }
+
+.loader {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    height: 120px;
+    width: 120px;
+    margin-top: -60px;
+    margin-left: -60px;
+    border-top: 10px solid var(--loader-large);
+    border-radius: 50%;
+    animation: load 1.5s linear infinite; }
+
+.loader:before, .loader:after {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 100px;
+    width: 100px;
+    margin-top: -50px;
+    margin-left: -50px;
+    border-top: 7.5px solid var(--loader-medium);
+    border-radius: 50%;
+    animation: load 1s linear infinite; }
+
+.loader:after {
+    height: 80px;
+    width: 80px;
+    margin-top: -40px;
+    margin-left: -40px;
+    border-top: 5px solid var(--loader-small);
+    animation: load 0.8s linear infinite; }
+
+@keyframes load {
+    0% {
+        transform: rotate(0deg); }
+    100% {
+        transform: rotate(360deg); }
+}

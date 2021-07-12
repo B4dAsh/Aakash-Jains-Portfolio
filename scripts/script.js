@@ -1,7 +1,7 @@
 let hb;
 let menuOpen = false;
 
-function hamburger(hamburger) {
+function hamburger() {
     
     if (!menuOpen) {
         hb = document.getElementById("hamburger-menu-container");
@@ -16,3 +16,7 @@ function hamburger(hamburger) {
     }
 
 }
+
+$(document).ready(function() {
+    setTimeout( () => $('.loader-container').fadeOut('slow'), 1000);
+});
