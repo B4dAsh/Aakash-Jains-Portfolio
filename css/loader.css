@@ -1,8 +1,8 @@
 .loader-container {
-    --background: radial-gradient(circle closest-corner at center, #303960, #301B3F);
-    --loader-large: #FFF5B7;
-    --loader-medium: #FF449F;
-    --loader-small: #00EAD3;
+    --background: radial-gradient(circle closest-corner at center, hsla(229, 33%, 28%), hsla(275, 40%, 18%, 0.9));
+    --loader-large: hsl(52, 100%, 86%);
+    --loader-medium: hsl(331, 100%, 63%);
+    --loader-small: hsl(174, 100%, 46%);
 
     position: fixed;
     top: 0;

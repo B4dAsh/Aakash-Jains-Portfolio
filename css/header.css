@@ -141,6 +141,10 @@ header {
 
 @media(orientation : landscape) {
 
+    .header-main-titles {
+        font-size: 20px;
+    }
+
     .header-main-btn {
         width: 25vw;
     }

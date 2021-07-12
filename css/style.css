@@ -7,12 +7,12 @@
     --title-font-primary: "Bebas Neue", sans-serif;
     --title-font-secondary: "Pacifico", cursive;
 
-    --foreground-primary:#fbe8d3;
-    --foreground-secondary: #f85f73;
-    --background-primary: #2b2e4a;
-    --background-secondary: #522546;
-    --background-tertiary: #114e60;
-    --hover-color: #ffff69; 
+    --foreground-primary:hsl(32, 83%, 91%);
+    --foreground-secondary: hsl(352, 92%, 67%);
+    --background-primary: hsl(234, 26%, 23%);
+    --background-secondary: hsl(316, 38%, 23%);
+    --background-tertiary: hsl(194, 70%, 22%);
+    --hover-color: hsl(60, 100%, 71%); 
 
     font-size: 16px; }
 
@@ -43,6 +43,10 @@ ul {
 ::selection {
     color: var(--background-primary);
     background-color: var(--hover-color); }
+
+::-webkit-scrollbar {
+    width: 0px;
+}
 
 @media(orientation: landscape) {
 
