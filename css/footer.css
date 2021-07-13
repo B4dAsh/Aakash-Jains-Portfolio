@@ -6,7 +6,6 @@ footer{
     font-family: var(--primary-font), serif;
     text-align: center;
     color: var(--foreground-primary);
-    background-color: rgba(0, 0, 0, 1);
     background-image: linear-gradient(to bottom, #e23e57, #88304e, #522546, #311d3f);
     border-top: 3px solid var(--foreground-primary);
     border-bottom: 3px solid var(--foreground-secondary); }
@@ -53,7 +52,7 @@ footer{
             border: 2px solid var(--foreground-primary);
             border-radius: 2%; }
     
-    .nav-outro-seprator {
+    .nav-outro-separator {
         border: none;
         border-bottom: 2px solid var(--foreground-primary); }
 
@@ -67,7 +66,7 @@ footer{
             align-self: center; }
         
         .footer-end-text {
-            color: white;
-            opacity: 0.4;
             align-self: center;
-            font-size: 0.75rem; }
+            font-size: 0.75rem;
+            color: white;
+            opacity: 0.4; }

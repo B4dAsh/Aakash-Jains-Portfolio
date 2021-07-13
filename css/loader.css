@@ -24,7 +24,8 @@
     border-radius: 50%;
     animation: load 1.5s linear infinite; }
 
-.loader:before, .loader:after {
+.loader:before,
+.loader:after {
     content: " ";
     display: block;
     position: absolute;
