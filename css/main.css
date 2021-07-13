@@ -5,238 +5,237 @@ main {
     align-items: center;
     justify-content: space-evenly;
     text-align: center;
+    gap: 5vh;
     font-family: var(--primary-font), serif;
-    color: var(--foreground-primary), white;
-    background-color: var(--background-primary); }
+    color: var(--background-primary), white;
+    background-color: var(--foreground-primary); }
 
-    .intro-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-evenly;
-        gap: 5vh;
-        padding: 7.5vh 0;
-        color: var(--background-primary);
-        background-color: var(--foreground-primary); }
-    
-        .my-photo {
-            height: 250px; 
-            width: 250px;
-            max-height: 50vh;
-            max-width: 75vw;
-            background-image: linear-gradient(to bottom right, #e23e57, #88304e, #522546);
-            padding: 4px;
-            border-radius: 50%; }
-            
-        .main-intro {
-            margin: 0 5vw;
-            padding: 0 5vw;
-            font-family: var(--primary-font), serif;
-            text-align: center;
-            line-height: 1.5rem; }
-        .main-intro span {
-            font-size: 2rem;
-            padding-left: 30px; }
+.intro-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 5vh;
+    padding: 7.5vh 0 0 0;
+    color: var(--background-primary);
+    background-color: var(--foreground-primary); }
 
-    .formal-info-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        gap: 3vh;
+    .my-photo {
+        height: 250px; 
+        width: 250px;
+        max-height: 50vh;
+        max-width: 75vw;
+        background-image: linear-gradient(to bottom right, #e23e57, #88304e, #522546);
+        padding: 4px;
+        border-radius: 50%; }
+        
+    .main-intro {
+        margin: 0 5vw;
+        padding: 0 5vw;
+        font-family: var(--primary-font), serif;
+        text-align: center;
+        line-height: 1.5rem; }
+    .main-intro span {
+        font-size: 2rem;
+        padding-left: 30px; }
+
+.education-container {
+    color: var(--background-primary);
+    font-family: var(--primary-font), sans-serif; }
+
+    .list-title {
         width: 100%;
-        padding-bottom: 5vh;
-        color: var(--background-primary);
-        background-color: var(--foreground-primary); }
+        font-size: 2rem;
+        font-weight: bold;
+        font-family: var(--title-font-secondary);
+        color: var(--background-primary) !important;
+        margin-bottom: 2vh; }
 
-        .formal-info-container .list-title {
-            font-family: var(--title-font-secondary);
-            color: var(--background-primary);
-            margin-bottom: 2.5vh; }
-
-        .education-container {
-            font-family: var(--primary-font), sans-serif; }
-
-            .education-list-entry{
-				display: flex;
-				justify-content: center;
-			    margin: 0 5vw; }
-
-				.education-list-icon {
-					font-size: 2.25rem;
-					justify-content: center;
-					align-items: center; }
-
-				.education-list-info-container {
-					display: flex;
-					flex-direction: column;
-					text-align: left;
-					margin: 0 0 0 7.5vw; }
-
-					.education-list-uni-title {	
-						flex-direction: column;
-						color: var(--background-primary);
-						font-family: var(--title-font-primary), sans-serif;
-						font-size: 1.6rem;
-						text-decoration: underline;
-                        margin-bottom: 0.8vh; }
-
-					.education-list-course {
-						flex-direction: column;
-						font-size: 1.1rem;
-                        margin-bottom: 0.5vh; }
-
-		.certifications-container {
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			align-items: center;
-			margin: 2.5vh 5vw 0 5vw; }
-
-			.certification-entry {
-				display: flex;
-				margin-bottom: 3vh;
-				height: 10vh;
-				width: 100%; }
-
-				.certification-icon-container {
-					display: flex;
-					justify-content: center;
-					align-items: center;
-					height: 100%;
-					width: 10vh;
-					font-size: 3rem;
-					color: var(--foreground-primary);
-					background-color: var(--background-primary) !important;
-                    transition: all 0.3s ease; }
-                .certification-icon-container:hover {
-                    color: var(--hover-color); }
-                
-
-				.certification-entry-info-container {
-					width: 80vw;
-					padding-left: 3vw;
-					font-size: 0.9rem;
-					text-align: left; }
-
-                    .certification-author {
-                        font-size: 1rem;
-                        font-family: var(--title-font-secondary);
-                        font-weight: bold; }
-
-					.certification-credentials {
-                        display: flex;
-                        align-self: flex-end;
-						font-family: var(--title-font-primary);
-						opacity: 0.75;
-						text-decoration: underline; }
-
-    .secondary-info-container {
+    .education-list-entry {
         display: flex;
-        flex-direction: column;
-        margin: 3vh 0 10vh 0;
-        gap: 4vh;
-        color: var(--foreground-primary); 
-        overflow: hidden; }
+        justify-content: center;
+        margin: 0 5vw; }
 
-        .lists-container {
+        .education-list-icon {
+            justify-content: center;
+            align-items: center;
+            font-size: 2.25rem;
+            color: var(--background-primary); }
+
+        .education-list-info-container {
             display: flex;
             flex-direction: column;
-            gap: 3vh;
-            color: var(--foreground-primary); 
-            overflow: hidden; }
+            text-align: left;
+            margin: 0 0 0 7.5vw; }
 
-            .lists-container * {
-                max-width: 100%;
-                max-height: 100%; }
+            .education-list-uni-title {	
+                flex-direction: column;
+                color: var(--background-primary);
+                font-family: var(--title-font-primary), sans-serif;
+                font-size: 1.6rem;
+                text-decoration: underline;
+                margin-bottom: 0.8vh; }
 
-            .info-title {
-                font-size: 2.5rem;
-                font-family: var(--font-primary);
+            .education-list-course {
+                flex-direction: column;
+                font-size: 1.1rem;
+                margin-bottom: 0.5vh; }
+
+.expertise-container { 
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    gap: 2vh; }
+
+    .expertise-container .list-title {
+        margin-bottom: 0.5vh;
+        font-size: 2.2rem; }
+
+    .expertise-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        text-align: left;
+        gap: 1vh;
+        padding: 2vh 5vw;
+        border: 1.5px solid var(--background-primary); }
+
+        .expertise-item-header-container {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            color: var(--background-primary); }
+
+            .expertise-item-header-container div{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 15%;
+                font-size: 2rem; }
+
+            .expertise-item-header-container h3{
+                font-size: 1.25rem; }
+
+        .expertise-item hr {
+            border: 0;
+            border-bottom: 1px solid var(--background-primary); }
+
+        .expertise-item-description {
+            padding: 0 0 0 5%;
+            align-self: left;
+            font-size: 0.9rem;
+            opacity: 0.7; }
+
+            .expertise-item-description ul {
+                list-style: square; }
+
+.certifications-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+
+    .certification-entry {
+        height: 10vh;
+        width: 90%;
+        display: flex;
+        color: var(--background-primary);
+        margin-bottom: 3vh; }
+
+        .certification-icon-container {
+            height: 100%;
+            width: 10vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 3rem;
+            color: var(--foreground-primary);
+            background-color: var(--background-primary) !important;
+            transition: all 0.3s ease; }
+        .certification-icon-container:hover {
+            color: var(--hover-color); }
+        
+        .certification-entry-info-container {
+            width: 80vw;
+            padding-left: 3vw;
+            font-size: 0.9rem;
+            text-align: left; }
+
+            .certification-author {
+                font-size: 1rem;
+                font-family: var(--title-font-secondary);
+                font-weight: bold; }
+
+            .certification-credentials {
+                display: flex;
+                align-self: flex-end;
+                font-family: var(--title-font-primary);
+                opacity: 0.75;
+                text-decoration: underline; }
+
+.skills-and-resume-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    color: var(--foreground-primary);
+    background-color: var(--background-primary);
+    padding: 2.5vh 0 7.5vh 0; }
+
+    .info-title {
+        text-align: center;
+        font-size: 2.5rem;
+        font-family: var(--title-font-primary);
+        font-weight: bold;
+        color: var(--foreground-secondary); }
+
+    .skills-list {
+        display: flex;
+        flex-direction: column;
+        gap: 2vh;
+        margin: 3vh 10vw; }
+
+    .resume-container {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 100%;
+        height: 50%;
+        gap: 3vh;
+        color: var(--foreground-primary);
+        background: var(--background-primary); }
+
+        .resume-btn {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: auto;
+            height: 7.5vh;
+            width: 60vw;
+            background-color: var(--foreground-secondary);
+            border: 3px solid var(--foreground-primary);
+            border-radius: 2%;
+            box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+            transition: all 1s ease;
+            z-index: 2; }
+        .resume-btn:hover {
+            background-color: var(--hover-color);
+            transform: scale(0.9);
+            box-shadow: none; }
+                
+            .resume-btn span {
+                font-size: 1.2rem;
+                color: var(--background-primary);
+                text-transform: uppercase;
+                justify-content: center;
+                font-weight: bold;
                 text-align: center; }
 
-            .programming-lang-list-container {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                color: var(--foreground-primary); }
-
-                .list-title {
-                    width: 100%;
-                    font-size: 2rem;
-                    font-weight: bold;
-                    font-family: var(--title-font-primary);
-                    color: var(--foreground-secondary); }
-
-                    .programming-lang-list li {
-                        display: flex;
-                        align-items: center;
-                        height: 10vh;
-                        gap: 2.5vw; }
-
-                        .programming-lang-icon {
-                            margin-left: 5vw;
-                            font-size: 2rem; }
-                            
-                        .programming-lang-icon:hover {
-                            color: var(--hover-color); }
-                        
-                        .programming-lang-title {
-                            text-align: center;
-                            align-self: center; }
-
-            .skills-container {
-                display: flex;
-                flex-direction: column; }
-
-                .skills-list {
-                    display: flex;
-                    flex-direction: column;
-                    gap: 2vh;
-                    margin: 3vh 10vw; }
-
-        .resume-container {
-            position: relative;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
-            width: 100%;
-            height: 50%;
-            gap: 3vh;
-            color: var(--foreground-primary);
-            background: var(--background-primary); }
-
-            .resume-btn {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                margin: auto;
-                height: 7.5vh;
-                width: 60vw;
-                background-color: var(--foreground-secondary);
-                border: 3px solid var(--foreground-primary);
-                border-radius: 2%;
-                box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
-                transition: all 1s ease;
-                z-index: 2; }
-            .resume-btn:hover {
-                background-color: var(--hover-color);
-                transform: scale(0.9);
-                box-shadow: none; }
-                    
-                .resume-btn span {
-                    font-size: 1.2rem;
-                    color: var(--background-primary);
-                    text-transform: uppercase;
-                    justify-content: center;
-                    font-weight: bold;
-                    text-align: center; }
-
-            .resume-description {
-                margin: 1vh 4vw 0 7.5vw;
-                padding: 0 0 0 4vw;
-                text-align: left;
-                border-left: 2px solid var(--foreground-secondary); }
+        .resume-description {
+            margin: 1vh 4vw 0 7.5vw;
+            padding: 0 0 0 4vw;
+            text-align: left;
+            border-left: 2px solid var(--foreground-secondary); }
 
 
 @media (orientation: landscape) {
@@ -246,11 +245,12 @@ main {
 
         .resume-description {
             align-self: center;
-            width: clamp(45ch, 50%, 75ch);
-        }
+            width: clamp(45ch, 50%, 75ch); }
 
         .resume-btn {
-            width: 25vw;
-        }
+            width: 25vw; }
+
+        .expertise-container {
+            width: 50%; }
 
 }

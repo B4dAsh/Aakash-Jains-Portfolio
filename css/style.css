@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 :root {
-    --primary-font: "Poppins", sans-serif;
+    --primary-font: "Poppins", monospace;
     --title-font-primary: "Bebas Neue", sans-serif;
     --title-font-secondary: "Pacifico", cursive;
 
@@ -17,7 +17,7 @@
     font-size: 16px; }
 
 * {
-    /* border: 0.1px solid white;  */
+    /* border: 0.1px solid black;  */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
