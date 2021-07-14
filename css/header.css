@@ -10,28 +10,28 @@ html {
     height: 5vh;
     width: 100%;
     overflow: hidden;
+    color: var(--foreground-primary);
     background-color: var(--background-primary);
-    border-bottom: 1px solid var(--foreground-primary);
+    border-bottom: 2px solid var(--foreground-primary);
     z-index: 5; }
 
     .navbar-title {
         padding: 0 2.5%;
         font-size: 1.5rem;
         font-family: var(--title-font-secondary), cursive;
-        color: var(--foreground-primary);
         transition: all 0.5s linear; }
     .navbar-title:hover {
-        color: var(--hover-color); }
+        background-color: var(--hover-color); }
 
     .hamburger-btn {
         float: right;
         height: 5vh;
         width: auto;
         font-size: 2rem;
-        color: var(--foreground-primary);
-        background-color: var(--background-primary);
+        color: var(--background-primary);
+        background-color: var(--foreground-primary);
         cursor: pointer;
-        border: 1px solid var(--foreground-primary);
+        border: none;
         aspect-ratio: 1/1;
         transition: all 0.5s ease; }
 
@@ -49,8 +49,8 @@ header {
     margin: 0 0 0 -100%;
     font-size: 2.5rem;
     font-family: var(--title-font-primary);
-    color: var(--background-primary);
-    background-color: var(--foreground-primary);
+    color: var(--foreground-primary);
+    background-color: var(--background-primary);
     opacity: 0.9;
     z-index: 5;
     transition: all 0.33s linear; }
@@ -64,12 +64,12 @@ header {
             display: flex;
             flex-direction: column;
             align-items: center;
-            padding-top: 20vh; }
+            padding-top: 15vh; }
         
         .hamburger-menu * {
-            width: 66.66%;
+            width: 50%;
             text-align: center;
-            border-bottom: 3px solid var(--background-primary); }
+            border-bottom: 3px solid var(--foreground-primary); }
         .hamburger-menu *:last-child {
             border-bottom: none; }
 
@@ -84,7 +84,7 @@ header {
     align-items: center;
     text-align: left;
     font-family: var(--title-font-secondary), serif;
-    color: var(--foreground-primary);
+    color: hsl(32 , 83%, 91%);
     background: url(../images/header-img.png) no-repeat center center fixed; }
         
     .header-main-titles {
@@ -131,10 +131,11 @@ header {
             font-size: 1.5rem;
             text-align: center;
             line-height: 7.5vh;
-            color: black;
-            background-color: var(--foreground-primary);
+            color: var(--foreground-primary);
+            background-color: var(--background-primary);
             cursor: pointer;
             outline: none;
+            border: 2px solid hsl(32, 83%, 91%);
             border-radius: 50px;
             transition: all 0.5s ease; }
         .header-main-btn:hover {

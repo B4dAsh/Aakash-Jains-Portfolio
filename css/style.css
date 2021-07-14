@@ -7,17 +7,17 @@
     --title-font-primary: "Bebas Neue", sans-serif;
     --title-font-secondary: "Pacifico", cursive;
 
-    --foreground-primary:hsl(32, 83%, 91%);
-    --foreground-secondary: hsl(352, 92%, 67%);
-    --background-primary: hsl(234, 26%, 23%);
-    --background-secondary: hsl(316, 38%, 23%);
-    --background-tertiary: hsl(194, 70%, 22%);
+    --foreground-primary: hsl(0, 0%, 7%);
+    --foreground-secondary: hsl(216, 62%, 16%);
+    --foreground-tertiary: hsl(352, 92%, 67%);
     --hover-color: hsl(60, 100%, 71%); 
+    --background-primary: hsl(32, 83%, 91%);
+    --background-secondary: hsl(0, 0%, 100%);
 
     font-size: 16px; }
 
 * {
-    /* border: 0.1px solid black;  */
+    /* border: 0.1px solid green;  */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -27,6 +27,8 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    color: var(--foreground-primary);
+    background-color: var(--background-primary);
     font-family: var(--primary-font), sans-serif; }
 
 span, i {
@@ -41,10 +43,10 @@ ul {
 
 ::-webkit-selection,
 ::selection {
-    color: var(--background-primary);
+    color: var(--background-color);
     background-color: var(--hover-color); }
 
-::-webkit-scrollbar {
+body::-webkit-scrollbar {
     width: 0px;
 }
 

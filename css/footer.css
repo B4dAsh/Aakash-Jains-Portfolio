@@ -5,10 +5,9 @@ footer{
     height: 75vh;
     font-family: var(--primary-font), serif;
     text-align: center;
-    color: var(--foreground-primary);
+    color: hsl(32, 83%, 91%);
     background-image: linear-gradient(to bottom, #e23e57, #88304e, #522546, #311d3f);
-    border-top: 3px solid var(--foreground-primary);
-    border-bottom: 3px solid var(--foreground-secondary); }
+    border-top: 3px solid var(--foreground-primary); }
 
     .footer-main-container {
         display: flex;
@@ -47,14 +46,13 @@ footer{
             align-self: center;
             margin: 0 5vw;
             padding: 2vh 3vw;
-            color: var(--foreground-primary);
             background: transparent;
-            border: 2px solid var(--foreground-primary);
+            border: 2px solid ;
             border-radius: 2%; }
     
     .nav-outro-separator {
         border: none;
-        border-bottom: 2px solid var(--foreground-primary); }
+        border-bottom: 2px solid hsl(32, 83%, 91%); }
 
     .outro {
         display: flex;

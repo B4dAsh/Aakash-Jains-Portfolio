@@ -1,8 +1,8 @@
 .loader-container {
-    --background: radial-gradient(circle closest-corner at center, hsla(229, 33%, 28%), hsla(275, 40%, 18%, 0.9));
-    --loader-large: hsl(52, 100%, 86%);
-    --loader-medium: hsl(331, 100%, 63%);
-    --loader-small: hsl(174, 100%, 46%);
+    --background: radial-gradient(circle closest-corner at center, var(--background-primary), var(--background-secondary));
+    --loader-large: var(--foreground-secondary);
+    --loader-medium: var(--foreground-primary);
+    --loader-small: #295d65;
 
     position: fixed;
     top: 0;
@@ -10,6 +10,7 @@
     right: 0;
     bottom: 0;
     background: var(--background);
+    opacity: 0.9;
     z-index: 10; }
 
 .loader {
