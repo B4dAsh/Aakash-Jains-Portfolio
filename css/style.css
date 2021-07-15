@@ -12,7 +12,7 @@
     --foreground-tertiary: hsl(352, 92%, 67%);
     --hover-color: hsl(60, 100%, 71%); 
     --background-primary: hsl(32, 83%, 91%);
-    --background-secondary: hsl(0, 0%, 100%);
+    --background-secondary: hsl(108, 19%, 82%);
 
     font-size: 16px; }
 
@@ -28,7 +28,7 @@ body {
     flex-direction: column;
     justify-content: space-evenly;
     color: var(--foreground-primary);
-    background-color: var(--background-primary);
+    background-color: var(--background-secondary);
     font-family: var(--primary-font), sans-serif; }
 
 span, i {
@@ -40,6 +40,9 @@ a {
 
 ul {
     list-style: none; }
+
+button {
+    outline: none; }
 
 ::-webkit-selection,
 ::selection {

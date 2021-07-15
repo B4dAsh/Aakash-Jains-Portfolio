@@ -11,24 +11,27 @@ main {
     background-color: var(--background-primary); }
 
 .intro-container {
+    width: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
     gap: 5vh;
-    padding: 7.5vh 0 0 0; }
+    padding-top: 2.5vh; }
+
+    .intro-container .list-title {
+        margin-bottom: -2.5vh;}
 
     .my-photo {
         height: 250px; 
         width: 250px;
         max-height: 50vh;
         max-width: 75vw;
-        background-image: linear-gradient(to bottom right, #e23e57, #88304e, #522546);
-        padding: 4px;
+        background: var(--foreground-primary);
+        padding: 2px;
         border-radius: 50%; }
         
     .main-intro {
-        margin: 0 5vw;
         padding: 0 5vw;
         font-family: var(--primary-font), serif;
         text-align: center;
@@ -38,19 +41,19 @@ main {
         padding-left: 30px; }
 
 .education-container {
+    width: 90%;
     font-family: var(--primary-font), sans-serif; }
 
     .list-title {
         width: 100%;
-        font-size: 2rem;
+        font-size: 2.5rem;
         font-weight: bold;
-        font-family: var(--title-font-secondary);
+        font-family: var(--title-font-primary);
         margin-bottom: 2vh; }
 
     .education-list-entry {
         display: flex;
-        justify-content: center;
-        margin: 0 5vw; }
+        justify-content: center; }
 
         .education-list-icon {
             justify-content: center;
@@ -82,8 +85,7 @@ main {
     gap: 2vh; }
 
     .expertise-container .list-title {
-        margin-bottom: 0.5vh;
-        font-size: 2.2rem; }
+        margin-bottom: 0.5vh; }
 
     .expertise-item {
         display: flex;
@@ -130,6 +132,9 @@ main {
     align-items: center;
     gap: 3vh; }
 
+    .certifications-container .list-title {
+        margin-bottom: 0; }
+
     .certification-entry {
         width: 90%;
         display: flex; }
@@ -144,8 +149,6 @@ main {
             color: var(--foreground-primary);
             background-color: var(--background-primary) !important;
             transition: all 0.3s ease; }
-        .certification-icon-container:hover {
-            color: var(--hover-color); }
         
         .certification-entry-info-container {
             width: 80vw;
@@ -198,7 +201,8 @@ main {
         transition: all 1s ease;
         z-index: 2; }
     .resume-btn:hover {
-        background-color: var(--hover-color);
+        color: var(--background-primary);
+        background-color: var(--foreground-primary);
         transform: scale(0.9);
         box-shadow: none; }
             
