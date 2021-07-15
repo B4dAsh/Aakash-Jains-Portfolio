@@ -27,18 +27,25 @@ main {
         width: 250px;
         max-height: 50vh;
         max-width: 75vw;
+        aspect-ratio: 1/1;
         background: var(--foreground-primary);
         padding: 2px;
         border-radius: 50%; }
         
     .main-intro {
-        padding: 0 5vw;
-        font-family: var(--primary-font), serif;
+        padding: 0 2.5vw;
+        display: flex;
+        flex-direction: column;
         text-align: center;
+        gap: 2vh;
+        font-family: var(--primary-font), sans-serif;
+        color: var(--foreground-primary-reduced-opacity);
         line-height: 1.5rem; }
-    .main-intro span {
-        font-size: 2rem;
-        padding-left: 30px; }
+
+            .main-intro span {
+                color: var(--foreground-secondary);
+                font-size: 2rem;
+                padding-left: 30px; }
 
 .education-container {
     width: 90%;
@@ -69,7 +76,7 @@ main {
             .education-list-uni-title {	
                 flex-direction: column;
                 font-family: var(--title-font-primary), sans-serif;
-                font-size: 1.6rem;
+                font-size: 1.5rem;
                 text-decoration: underline;
                 margin-bottom: 0.8vh; }
 
@@ -177,48 +184,48 @@ main {
         gap: 2vh; }
 
 .resume-container {
+    width: 90%;
     margin-bottom: 5vh;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    width: 100%;
-    gap: 2vh; }
+    gap: 2.5vh; }
 
     .resume-container .list-title {
-        margin-bottom: 0.5vh; }
+        margin-bottom: 0; }
 
     .resume-btn {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
         margin: auto;
         height: 7.5vh;
         width: 60vw;
-        background-color: var(--background-primary);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        font-size: 1.1rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: var(--background-primary);
+        background-color: var(--foreground-secondary);
         border: 3px solid var(--foreground-primary);
         border-radius: 2%;
-        box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
-        transition: all 1s ease;
-        z-index: 2; }
+        transition: all 1s ease; }
     .resume-btn:hover {
-        color: var(--background-primary);
-        background-color: var(--foreground-primary);
-        transform: scale(0.9);
-        box-shadow: none; }
-            
-        .resume-btn span {
-            font-size: 1.2rem;
-            text-transform: uppercase;
-            justify-content: center;
-            font-weight: bold;
-            text-align: center; }
+        color: var(--foreground-primary);
+        background-color: var(--background-primary);
+        transform: scale(0.95); }
 
     .resume-description {
-        margin: 1vh 4vw 0 7.5vw;
-        padding: 0 0 0 4vw;
+        width: 100%;
+        padding: 0 0 0 5vw;
         text-align: left;
         border-left: 2px solid var(--foreground-primary); }
 
+main a {
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--foreground-secondary);
+    opacity: 1; }
 
 @media (orientation: landscape) {
 

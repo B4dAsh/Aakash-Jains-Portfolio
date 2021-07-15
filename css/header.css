@@ -1,5 +1,5 @@
 html {
-    scroll-padding-top: calc(5vh - 3px); }
+    scroll-padding-top: 5vh; }
 
 .navbar {
     position: sticky;
@@ -133,7 +133,7 @@ header {
             height: 7.5vh;
             width: 60vw;
             margin: 0 auto;
-            font-size: 1.5rem;
+            font-size: 1.4rem;
             text-align: center;
             line-height: 7.5vh;
             color: var(--foreground-primary);
