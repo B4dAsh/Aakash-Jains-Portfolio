@@ -17,7 +17,7 @@ main {
     align-items: center;
     justify-content: space-evenly;
     gap: 5vh;
-    padding-top: 2.5vh; }
+    margin-top: 2.5vh; }
 
     .intro-container .list-title {
         margin-bottom: -2.5vh;}
@@ -222,8 +222,23 @@ main {
 
 @media (orientation: landscape) {
 
+    .intro-container {
+        width: 66.66%; }
+
+    .education-container {
+        width: 50%; }
+    
+    .expertise-container {
+        width: 50%; }
+
+    .certifications-container {
+        width: 50%; }
+
         .certification-entry {
             width: 50%; }
+
+    .skills-container {
+        width: 50%; }
 
         .resume-description {
             align-self: center;
@@ -231,8 +246,5 @@ main {
 
         .resume-btn {
             width: 25vw; }
-
-        .expertise-container {
-            width: 50%; }
 
 }
