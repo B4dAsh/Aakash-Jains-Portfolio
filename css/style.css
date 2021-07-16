@@ -7,18 +7,18 @@
     --title-font-primary: "Bebas Neue", sans-serif;
     --title-font-secondary: "Pacifico", cursive;
 
-    --foreground-primary: hsl(0, 0%, 7%);
-    --foreground-primary-reduced-opacity: hsla(0, 0%, 7%, 0.75);
-    --foreground-secondary: hsl(216, 62%, 16%);
-    --foreground-tertiary: hsl(352, 92%, 67%);
-    --hover-color: hsl(60, 100%, 71%); 
-    --background-primary: hsl(32, 83%, 91%);
-    --background-secondary: hsl(108, 19%, 82%);
+    --foreground-primary: #151819;
+    --foreground-primary-reduced-opacity: #121212bf;
+    --foreground-secondary: #102442;
+    --tertiary: #6293b7;
+    --background-primary: #fbe9d5;
+    --background-secondary: #e9e2cf99;
+    --hover-color: #ffff6b; 
 
     font-size: 16px; }
 
 * {
-    /* border: 0.1px solid green !important; */
+    /* border: 0.1px solid red !important; */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -29,7 +29,7 @@ body {
     flex-direction: column;
     justify-content: space-evenly;
     color: var(--foreground-primary);
-    background-color: var(--background-secondary);
+    background-color: var(--background-primary);
     font-family: var(--primary-font), sans-serif; }
 
 span, i {

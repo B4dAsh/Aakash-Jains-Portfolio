@@ -6,7 +6,7 @@ footer{
     font-family: var(--primary-font), serif;
     text-align: center;
     color: hsl(32, 83%, 91%);
-    background-image: linear-gradient(to bottom, #628778, var(--foreground-secondary), var(--foreground-primary));
+    background-image: linear-gradient(to bottom, var(--tertiary), var(--foreground-secondary), var(--foreground-primary));
     border-top: 3px solid var(--foreground-primary); }
 
     .footer-main-container {
