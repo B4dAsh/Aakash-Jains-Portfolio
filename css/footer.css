@@ -9,7 +9,7 @@ footer{
     text-align: center;
     font-family: var(--primary-font), serif;
     color: hsl(32, 83%, 91%);
-    background-image: linear-gradient(to bottom right, var(--tertiary), var(--foreground-secondary), var(--foreground-primary));
+    background-image: radial-gradient(circle at top, var(--tertiary), var(--foreground-secondary), var(--foreground-primary));
     border-top: 2px solid var(--foreground-primary); }
 
     .footer-up-icon-container {
@@ -70,11 +70,11 @@ footer{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center; }
+        align-items: center; 
+        gap: 5vh; }
 
         .footer-quote {
             width: 90%;
-            margin-bottom: 5vh;
             padding: 2vh 3vw;
             border: 2px solid;
             border-radius: 2%; }

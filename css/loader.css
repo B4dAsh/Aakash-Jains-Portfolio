@@ -1,8 +1,8 @@
 .loader-container {
-    --background: radial-gradient(circle closest-corner at center, var(--background-primary), var(--background-secondary));
-    --loader-large: var(--foreground-secondary);
-    --loader-medium: var(--foreground-primary);
-    --loader-small: #295d65;
+    --background: radial-gradient(circle at center, var(--background-primary), var(--background-secondary));
+    --loader-large: var(--foreground-primary);
+    --loader-medium: var(--foreground-secondary);
+    --loader-small: var(--tertiary);
 
     position: fixed;
     top: 0;
@@ -21,9 +21,9 @@
     width: 120px;
     margin-top: -60px;
     margin-left: -60px;
-    border-top: 10px solid var(--loader-large);
+    border-top: 7px solid var(--loader-large);
     border-radius: 50%;
-    animation: load 1.5s linear infinite; }
+    animation: load 1.25s linear infinite; }
 
 .loader:before,
 .loader:after {
@@ -36,7 +36,7 @@
     width: 100px;
     margin-top: -50px;
     margin-left: -50px;
-    border-top: 7.5px solid var(--loader-medium);
+    border-top: 6px solid var(--loader-medium);
     border-radius: 50%;
     animation: load 1s linear infinite; }
 
@@ -46,7 +46,7 @@
     margin-top: -40px;
     margin-left: -40px;
     border-top: 5px solid var(--loader-small);
-    animation: load 0.8s linear infinite; }
+    animation: load 0.75s linear infinite; }
 
 @keyframes load {
     0% {
