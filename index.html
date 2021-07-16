@@ -46,7 +46,7 @@
       <div id="hamburger-menu-container" class="hamburger-menu-container">
         <div class="hamburger-menu">
           <a href="#header" onclick="hamburger()">Home</a>
-          <a href="#main" onclick="hamburger()">About</a>
+          <a href="#intro-container" onclick="hamburger()">About</a>
           <a href="#education-container" onclick="hamburger()">Education</a>
           <a href="#expertise-container" onclick="hamburger()">Expertise</a>
           <a href="#certifications-container" onclick="hamburger()">Certifications</a>
@@ -71,11 +71,11 @@
 
 		<main id="main">
 
-			<div class="intro-container">
+			<div id="intro-container" class="intro-container">
         <span class="main-title">About Me</span>
         <img class="my-photo" src="images/my-img1.jpg" alt="Aakash Jain."/>
         <div class="main-intro">
-          <p><span>Hi!</span> My name is <a href="/">Aakash</a> and I'm a developer with a passion for Web technologies, AI and Cybersecurity. I'm currently an undergraduate student studying Computer science at the <a href="http://nmu.ac.in">North Maharashtra University</a> with a minor in management. A productivity freak, I believe in the habit of continuous self-improvement.</p>
+          <p><span>Hi!</span> My name is <a href="/">Aakash</a> and I'm a Software developer with a passion for Web technologies, AI and Cybersecurity. I'm currently an undergraduate student studying Computer science at the <a href="http://nmu.ac.in">North Maharashtra University</a> with a minor in management. A productivity freak, I believe in the habit of continuous self-improvement.</p>
           <p>When not coding you can usually find me reading, binging media content or headbanging over loud alt-rock. </p>
         </div>
       </div>
@@ -290,30 +290,31 @@
 		</main>
 
 		<footer id="footer">
-      <div class="footer-main-container">
-        <div class="footer-nav">
-          <span class="footer-nav-title">Let's Connect!</span>
 
-          <nav class="nav-icons-container">
+      <div class="footer-up-icon-container"><a href="#header"><i class="fas fa-angle-up"></i></a></div>
+
+      <div class="footer-nav-container">
+        <span class="footer-nav-title">Let's Connect!</span>
+        <nav class="footer-nav-icons-container">
+          <div>
             <a href="mailto:aakashjainofficial@gmail.com"><i class="fas fa-envelope"></i></a>
             <a href="https://www.linkedin.com/in/aakashjainofficial/"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/B4dAsh"><i class="fab fa-github-square"></i></a>
+          </div>
+          <div>
             <a href="https://www.facebook.com/profile.php?id=100008852703052"><i class="fab fa-facebook-square"></i></a>
             <a href="https://www.instagram.com/ashtrospection/"><i class="fab fa-instagram-square"></i></a>
             <a href="https://twitter.com/ashtrospective"><i class="fab fa-twitter-square"></i></a>
-            <a href="https://github.com/B4dAsh"><i class="fab fa-github-square"></i></a>
-          </nav>
-        </div>
-
-        <div class="footer-quote">"You either die a developer or you live long enough see yourself teach coding on YouTube."</div>
-
+          </div>
+        </nav>
       </div>
-
-      <hr class="nav-outro-separator"/>
  
-      <div class="outro">
-        <span class="legal">©2019-21 Aakash Jain. All rights reserved.</span>
-
-        <span class="footer-end-text">Made with Love and Caffeine @ Dhule, MH.</span>
+      <div class="footer-end-container">
+        <div class="footer-quote">"You either die a developer or you live long enough see yourself teach coding on YouTube."</div>
+        <div class="footnotes">
+          <span class="legal">©2019-21 <a href="/">Aakash Jain</a>. All rights reserved.</span>
+          <span class="footnotes-small-text">Made with Love and Caffeine @ Dhule, MH.</span>
+        </div>
       </div>
 
     </footer>

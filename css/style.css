@@ -8,11 +8,11 @@
     --title-font-secondary: "Pacifico", cursive;
 
     --foreground-primary: #151819;
-    --foreground-primary-reduced-opacity: #121212bf;
+    --foreground-primary-reduced-opacity: #121212ee;
     --foreground-secondary: #102442;
     --tertiary: #6293b7;
     --background-primary: #fbe9d5;
-    --background-secondary: #e9e2cf99;
+    --background-secondary: #e9e2cf;
     --hover-color: #ffff6b; 
 
     font-size: 16px; }

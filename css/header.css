@@ -1,5 +1,5 @@
 html {
-    scroll-padding-top: 5vh; }
+    scroll-padding-top: 7.5vh; }
 
 .navbar {
     position: sticky;
@@ -132,20 +132,21 @@ header {
             height: 7.5vh;
             width: 60vw;
             margin: 0 auto;
+            overflow: hidden;
             font-size: 1.4rem;
             text-align: center;
             line-height: 7.5vh;
             color: var(--foreground-primary);
-            background-color: var(--background-primary);
+            background: linear-gradient(to bottom, var(--background-primary), var(--background-secondary));
             cursor: pointer;
             outline: none;
             border: 2px solid hsl(32, 83%, 91%);
             border-radius: 50px;
-            transition: all 0.5s ease; }
+            transition: all 1s ease; }
         .header-main-btn:hover {
             color: var(--background-primary);
-            background-color: var(--foreground-primary);
-            transform: scale(1.1); }
+            background: var(--foreground-primary);
+            transform: scale(0.9); }
         
         .header-main-btn-divider {
             font-size: 0.75rem;
