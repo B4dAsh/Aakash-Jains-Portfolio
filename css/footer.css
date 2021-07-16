@@ -88,8 +88,8 @@ footer{
             border-top: 2px solid var(--background-primary); }
 
             .footnotes-small-text {
-                font-size: 0.85rem;
-                opacity: 0.8; }
+                font-size: 0.8rem;
+                opacity: 0.7; }
 
 
 @media (orientation: landscape) {

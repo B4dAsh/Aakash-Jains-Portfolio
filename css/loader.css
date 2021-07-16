@@ -13,6 +13,13 @@
     opacity: 0.9;
     z-index: 10; }
 
+.loader-container > h1 {
+    position: relative;
+    top: 25%;
+    color: var(--foreground-secondary);
+    font-family: var(--title-font-secondary);
+    text-align: center; }
+
 .loader {
     position: absolute;
     top: 45%;

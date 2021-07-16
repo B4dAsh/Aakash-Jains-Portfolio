@@ -142,7 +142,7 @@ header {
             outline: none;
             border: 2px solid hsl(32, 83%, 91%);
             border-radius: 50px;
-            transition: all 1s ease; }
+            transition: all 0.5s ease; }
         .header-main-btn:hover {
             color: var(--background-primary);
             background: var(--foreground-primary);
