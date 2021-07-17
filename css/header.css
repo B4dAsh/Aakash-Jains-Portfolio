@@ -1,6 +1,3 @@
-html {
-    scroll-padding-top: 7.5vh; }
-
 .navbar {
     position: sticky;
     top: 0;
@@ -92,6 +89,7 @@ header {
     text-align: left;
     font-family: var(--title-font-primary);
     color: hsl(32 , 83%, 91%);
+    background-color: var(--foreground-primary);
     background: url(../images/header-img.png) no-repeat center center fixed;
     background-size: cover; }
         

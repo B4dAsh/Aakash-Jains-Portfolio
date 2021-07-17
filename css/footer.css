@@ -9,7 +9,7 @@ footer{
     text-align: center;
     font-family: var(--primary-font), serif;
     color: hsl(32, 83%, 91%);
-    background-image: radial-gradient(circle at top, var(--tertiary), var(--foreground-secondary), var(--foreground-primary));
+    background-image: radial-gradient(circle at top, var(--tertiary), #102442, #151819);
     border-top: 2px solid var(--foreground-primary); }
 
     .footer-up-icon-container {
@@ -85,7 +85,7 @@ footer{
             display: flex;
             flex-direction: column;
             justify-content: center;
-            border-top: 2px solid var(--background-primary); }
+            border-top: 2px solid #fbe9d5; }
 
             .footnotes-small-text {
                 font-size: 0.8rem;

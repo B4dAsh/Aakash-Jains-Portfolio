@@ -24,13 +24,21 @@
     box-sizing: border-box;
     scroll-behavior: smooth; }
 
+html {
+    scroll-padding-top: 7.5vh;
+    scrollbar-width: none; }
+
 body {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     color: var(--foreground-primary);
     background-color: var(--background-primary);
-    font-family: var(--primary-font), sans-serif; }
+    font-family: var(--primary-font), sans-serif;
+    font-smooth: always;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scrollbar-width: none; }
 
 span, i {
     display: inline-block; }
@@ -51,8 +59,7 @@ button {
     background-color: var(--hover-color); }
 
 body::-webkit-scrollbar {
-    width: 0px;
-}
+    width: 0px; }
 
 @media(orientation: landscape) {
 

@@ -11,7 +11,7 @@ main {
     background-color: var(--background-primary); }
 
 .intro-container {
-    margin-top: 5vh;
+    margin-top: 2.5vh;
     width: 90vw;
     display: flex;
     flex-direction: column;
@@ -22,12 +22,13 @@ main {
     .intro-container > .main-title {
         margin-bottom: -0.5vh; }
 
-    .my-photo {
+    .intro-photo {
         height: 250px; 
         width: 250px;
         max-height: 50vh;
         max-width: 75vw;
         aspect-ratio: 1/1;
+        filter: grayscale(50%);
         background: var(--foreground-primary);
         padding: 2px;
         border-radius: 50%; }
@@ -135,14 +136,19 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 2.5vh; }
+    gap: 1.5vh; }
 
     .certifications-container > .main-title {
-        margin-bottom: -1vh; }
+        margin-bottom: 1vh; }
 
-    .certification-entry {
-        width: 90%;
-        display: flex; }
+    .certification-item {
+        width: 100%;
+        padding-bottom: 1.5vh;
+        display: flex;
+        border-bottom: 2px solid var(--foreground-primary); }
+    .certifications-container > *:last-child {
+        padding-bottom: 0;
+        border-bottom: none; }
 
         .certification-icon-container {
             height: 100%;
@@ -150,28 +156,35 @@ main {
             display: flex;
             justify-content: center;
             align-items: center;
-            font-size: 3rem;
-            color: var(--foreground-primary);
-            background-color: var(--background-primary) !important;
+            font-size: 3.5rem;
+            aspect-ratio: 1/1;
+            color: var(--foreground-secondary);
+            background-color: transparent !important;
             transition: all 0.3s ease; }
         
-        .certification-entry-info-container {
-            width: 80vw;
+        .certification-item-info-container {
+            width: auto;
             padding-left: 3vw;
-            font-size: 0.9rem;
-            text-align: left; }
+            text-align: left;
+            font-family: var(--title-font-secondary); }
 
-            .certification-author {
-                font-size: 1rem;
-                font-family: var(--title-font-secondary);
-                font-weight: bold; }
+            .certification-provider {
+                font-family: var(--title-font-primary);
+                font-size: 1.25rem;
+                font-weight: bold; 
+                opacity: 0.8; }
 
-            .certification-credentials {
+            .certification-title {
+                opacity: 0.9; }
+
+            .certification-credential {
                 display: flex;
                 align-self: flex-end;
-                font-family: var(--title-font-primary);
-                opacity: 0.75;
-                text-decoration: underline; }
+                font-family: var(--primary-font);
+                font-size: 0.75rem;
+                text-decoration: underline;
+                color: var(--tertiary);
+                opacity: 0.75; }
 
 .skills-container {
     width: 90vw; }
