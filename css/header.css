@@ -8,7 +8,7 @@
     width: 100%;
     overflow: hidden;
     color: var(--foreground-primary);
-    background-color: var(--background-primary);
+    background-color: var(--background-secondary);
     border-bottom: 2px solid var(--foreground-primary);
     z-index: 5; }
 
@@ -26,7 +26,7 @@
         width: auto;
         font-size: 2rem;
         color: var(--foreground-primary);
-        background-color: var(--background-primary);
+        background-color: var(--background-secondary);
         cursor: pointer;
         border: none;
         border-left: 2px solid var(--foreground-primary);
@@ -37,6 +37,8 @@
         background-color: var(--foreground-primary); }
 
 header {
+    --header-foreground: var(--background-primary);
+
     position: relative;
     padding: 0;
     height: 95vh;
@@ -67,14 +69,14 @@ header {
             align-items: center;
             padding-top: 15vh; }
         
-        .hamburger-menu * {
+        .hamburger-menu > a {
             width: 50%;
             text-align: center;
             border-bottom: 3px solid var(--foreground-primary); }
-        .hamburger-menu *:hover {
+        .hamburger-menu > a:hover {
             color: var(--background-primary);
             background-color: var(--foreground-primary); }
-        .hamburger-menu *:last-child {
+        .hamburger-menu > a:last-child {
             border-bottom: none; }
 
 .header-main {
@@ -88,13 +90,13 @@ header {
     align-items: center;
     text-align: left;
     font-family: var(--title-font-primary);
-    color: hsl(32 , 83%, 91%);
-    background-color: var(--foreground-primary);
+    color: var(--header-foreground);
+    background-color: var(--background-primary);
     background: url(../images/header-img.png) no-repeat center center fixed;
     background-size: cover; }
         
     .header-main-text {
-        margin-top: -5vh;
+        margin-top: -8vh;
         font-size: 2.2rem; }
 
         .header-main-text > *:first-child {
@@ -138,15 +140,15 @@ header {
             background: linear-gradient(to bottom, var(--background-primary), var(--background-secondary));
             cursor: pointer;
             outline: none;
-            border: 2px solid hsl(32, 83%, 91%);
+            border: 2px solid #fbe9d5;
             border-radius: 50px;
             transition: all 0.5s ease; }
         .header-main-btn:hover {
-            transform: translateY(-10px); }
+            transform: translateY(-8px); }
         
         .header-main-btn-divider {
             font-size: 0.75rem;
-            color: hsl(32 , 83%, 91%); }
+            color: var(--header-foreground); }
 
 .header-nav-container {
     position: absolute;
@@ -161,22 +163,21 @@ header {
         flex-direction: column;
         gap: 2vh;
         font-size: 1.5rem;
-        color: hsl(32 , 83%, 91%);
+        color: var(--header-foreground);
         opacity: 0.95; }
 
-        .header-nav-container > nav > * {
+        .header-nav-container > nav > a {
             transition: all .3s ease; }
 
-        .header-nav-container > nav > *:hover {
+        .header-nav-container > nav > a:hover {
             transform: translateY(-5px);
-            color: hsl(32 , 100%, 100%);
             opacity: 1; }
 
     .header-nav-container > hr {
         height: 17vh;
         width: 2px;
         align-self: center;
-        background-color: hsl(32 , 83%, 91%);
+        background-color: var(--header-foreground);
         border: none;
         writing-mode: vertical-lr; }
 
@@ -186,7 +187,7 @@ header {
     bottom: 0;
     display: flex;
     gap: 3vh;
-    color: hsl(32 , 83%, 91%);
+    color: var(--header-foreground);
     writing-mode: vertical-lr; }
 
     .header-mail-container > a {
@@ -194,14 +195,13 @@ header {
         font-size: 0.9rem;
         transition: all .3s ease; }
     .header-mail-container > a:hover {
-        margin-bottom: 5px ;
-        color: hsl(32 , 100%, 100%); }
+        margin-bottom: 5px; }
 
     .header-mail-container > hr {
         height: 17vh;
         width: 2px;
         align-self: center;
-        background-color: hsl(32 , 83%, 91%);
+        background-color: var(--header-foreground);
         border: none;
         writing-mode: vertical-lr; }
 
