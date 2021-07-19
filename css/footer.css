@@ -7,7 +7,7 @@ footer{
     justify-content: space-between;
     gap: 5vh;
     text-align: center;
-    font-family: var(--primary-font), serif;
+    font-family: var(--title-font-secondary);
     color: hsl(32, 83%, 91%);
     background-image: radial-gradient(circle at top, var(--tertiary), #102442, #151819);
     border-top: 2px solid var(--foreground-primary); }
@@ -76,6 +76,7 @@ footer{
         .footer-quote {
             width: 90%;
             padding: 2vh 3vw;
+            font-size: 1.1rem;
             border: 2px solid;
             border-radius: 2%; }
     
@@ -85,10 +86,12 @@ footer{
             display: flex;
             flex-direction: column;
             justify-content: center;
+            font-family: var(--primary-font);
+            font-size: 0.95rem;
             border-top: 2px solid #fbe9d5; }
 
             .footnotes-small-text {
-                font-size: 0.8rem;
+                font-family: var(--title-font-secondary);
                 opacity: 0.7; }
 
 

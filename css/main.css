@@ -56,7 +56,6 @@ main {
     font-family: var(--primary-font), sans-serif; }
 
     .education-item {
-        padding: 0 0 2.5% 5vw;
         display: flex;
         flex-direction: column;
         justify-content: center; 
@@ -65,7 +64,7 @@ main {
         
         .education-item-title {
             font-family: var(--title-font-secondary);
-            font-size: 1.2rem;
+            font-size: 1.5rem;
             font-weight: bold;
             opacity: 0.9; }
 
@@ -113,7 +112,8 @@ main {
                 font-size: 2rem; }
 
             .expertise-item-header-container h3{
-                font-size: 1.25rem; }
+                font-family: var(--title-font-secondary);
+                font-size: 1.5rem; }
 
         .expertise-item hr {
             border: 0;
@@ -235,13 +235,12 @@ main {
     width: 100%;
     font-size: 2.5rem;
     font-weight: bold;
-    font-family: var(--title-font-primary); }
+    font-family: var(--title-font-secondary); }
 
 main a {
     font-weight: bold;
     text-decoration: none;
-    color: var(--foreground-secondary);
-    opacity: 1; }
+    color: var(--foreground-secondary); }
 
 @media (orientation: landscape) {
 

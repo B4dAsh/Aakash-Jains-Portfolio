@@ -1,11 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@font-face {
+    font-family: 'Brandon Grotesque';
+    src: url('../assets/fonts/brandon-grotesque.woff') format('woff'),
+        url('../assets/fonts/brandon-grotesque.ttf') format('truetype');
+    font-weight: 900;
+    font-display: swap; }
 
 :root {
     --primary-font: "Poppins", monospace;
     --title-font-primary: "Bebas Neue", sans-serif;
-    --title-font-secondary: "Pacifico", cursive;
+    --title-font-secondary: "Brandon Grotesque", "Poppins", cursive;
+    --cursive: "Pacifico", cursive;
 
     --foreground-primary: #151819;
     --foreground-primary-reduced-opacity: #121212ee;
