@@ -18,8 +18,8 @@ I went for plain HTML and CSS without any framework so as to maintain a fresh an
 | --------- | ------------------------------------------------------------------ |
 | Black     | ![151819](https://via.placeholder.com/12/151819?text=+) `#151819`  |
 | Dark Blue | ![102442](https://via.placeholder.com/12/102442?text=+) `#102442`  |
+| White     | ![dddddd](https://via.placeholder.com/12/dddddd?text=+) `#dddddd`  |
 | Beige     | ![fbe9d5](https://via.placeholder.com/12/fbe9d5?text=+) `#fbe9d5`  |
-| White     | ![e9e2cf](https://via.placeholder.com/12/e9e2cf?text=+) `#e9e2cf`  |
 
 ## 📑 Afterthoughts
 If you notice any bugs or have some feedback you may reach me out by [mail](mailto:aakashjainofficial@gmail.com) or by using contact form from the website. Happy coding! 🤟😉

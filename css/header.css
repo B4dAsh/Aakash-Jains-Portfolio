@@ -38,7 +38,7 @@
         background-color: var(--foreground-primary); }
 
 header {
-    --header-foreground: var(--background-primary);
+    --header-foreground: #fbe9d5;
 
     position: relative;
     padding: 0;
@@ -128,7 +128,7 @@ header {
             text-align: center;
             line-height: 7.5vh;
             color: var(--foreground-primary);
-            background: linear-gradient(to bottom, var(--background-primary), var(--background-secondary));
+            background: var(--background-secondary);
             cursor: pointer;
             outline: none;
             border: 2px solid #fbe9d5;

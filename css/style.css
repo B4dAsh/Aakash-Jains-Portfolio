@@ -15,11 +15,11 @@
     --cursive: "Pacifico", cursive;
 
     --foreground-primary: #151819;
-    --foreground-primary-reduced-opacity: #121212ee;
+    --foreground-primary-reduced-opacity: #151819bf;
     --foreground-secondary: #102442;
     --tertiary: #6293b7;
-    --background-primary: #fbe9d5;
-    --background-secondary: #e9e2cf;
+    --background-primary: #dddddd;
+    --background-secondary: #fbe9d5;
     --hover-color: #ffff6b; 
 
     font-size: 16px; }
