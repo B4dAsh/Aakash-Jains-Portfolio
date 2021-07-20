@@ -16,8 +16,8 @@
 
     --foreground-primary: #151819;
     --foreground-primary-reduced-opacity: #151819bf;
-    --foreground-secondary: #102442;
-    --tertiary: #6293b7;
+    --foreground-secondary: #766858;
+    --tertiary: #153262;
     --background-primary: #dddddd;
     --background-secondary: #fbe9d5;
     --hover-color: #ffff6b; 
@@ -36,16 +36,13 @@ html {
     scrollbar-width: none; }
 
 body {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
     color: var(--foreground-primary);
     background-color: var(--background-primary);
     font-family: var(--primary-font), sans-serif;
     font-smooth: always;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    scrollbar-width: none; }
+    overflow: overlay; }
 
 span, i {
     display: inline-block; }
@@ -66,11 +63,15 @@ button {
     background-color: var(--hover-color); }
 
 body::-webkit-scrollbar {
-    width: 0px; }
+    width: 5px;
+    border-radius: 12px; }
+body::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: var(--foreground-secondary); }
 
 @media(orientation: landscape) {
 
     :root {
-        font-size: 20px; }
+        font-size: 18px; }
 
 }

@@ -17,7 +17,8 @@ I went for plain HTML and CSS without any framework so as to maintain a fresh an
 | Color     | Hex                                                                |
 | --------- | ------------------------------------------------------------------ |
 | Black     | ![151819](https://via.placeholder.com/12/151819?text=+) `#151819`  |
-| Dark Blue | ![102442](https://via.placeholder.com/12/102442?text=+) `#102442`  |
+| Gray      | ![766858](https://via.placeholder.com/12/766858?text=+) `#766858`  |
+| Dark Blue | ![153262](https://via.placeholder.com/12/153262?text=+) `#153262`  |
 | White     | ![dddddd](https://via.placeholder.com/12/dddddd?text=+) `#dddddd`  |
 | Beige     | ![fbe9d5](https://via.placeholder.com/12/fbe9d5?text=+) `#fbe9d5`  |
 

@@ -10,6 +10,9 @@ main {
     color: var(--foreground-primary);
     background-color: var(--background-primary); }
 
+main > * {
+    min-height: 40vh; }
+
 .intro-container {
     margin-top: 2.5vh;
     width: 90vw;
@@ -42,7 +45,6 @@ main {
         line-height: 1.5rem; }
 
 		.main-intro span {
-			color: var(--foreground-secondary);
 			font-size: 2rem;
 			text-indent: 30px; }
 
@@ -55,16 +57,18 @@ main {
     font-family: var(--primary-font), sans-serif; }
 
     .education-item {
-        margin-left: 2%;
+        padding: 2vh 0 2vh 5vw;
         display: flex;
         flex-direction: column;
         justify-content: center; 
         gap: 2vh;
-        text-align: left; }
+        text-align: left;
+        background-color: var(--background-secondary);
+        border: 1px solid var(--foreground-primary); }
         
         .education-item-title {
             font-family: var(--title-font-secondary);
-            font-size: 1.5rem;
+            font-size: 1.35rem;
             font-weight: bold;
             opacity: 0.9; }
 
@@ -78,7 +82,7 @@ main {
             justify-content: space-between;
             font-family: var(--title-font-primary);
             font-size: 1.1rem;
-            color: var(--foreground-secondary);
+            color: var(--tertiary);
             opacity: 0.9; }
 
 .expertise-container { 
@@ -98,21 +102,20 @@ main {
         gap: 1vh;
         text-align: left;
         background: var(--background-secondary);
-        border: 1.5px solid var(--foreground-primary); }
+        border: 1px solid var(--foreground-primary); }
 
         .expertise-item-header-container {
-            display: flex;
-            flex-direction: row;
-            width: 100%; }
+            width: 100%;
+            display: flex; }
 
-            .expertise-item-header-container div{
+            .expertise-item-header-container div {
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 width: 15%;
                 font-size: 2rem; }
 
-            .expertise-item-header-container h3{
+            .expertise-item-header-container h3 {
                 font-family: var(--title-font-secondary);
                 font-size: 1.5rem; }
 
@@ -140,7 +143,7 @@ main {
         flex-direction: row-reverse; }
 
         .certifications-container > div:nth-child(2n+1) > .certification-item-info-container {
-            border: 2px solid var(--foreground-primary);
+            border: 1px solid var(--foreground-primary);
             border-right: none; }
 
     .certification-item {
@@ -154,7 +157,7 @@ main {
             display: flex;
             justify-content: center;
             align-items: center;
-            font-size: 3rem;
+            font-size: 3.5rem;
             color: var(--background-primary);
             transition: all 0.3s ease; }
         
@@ -166,7 +169,7 @@ main {
             justify-content: center;
             text-align: left;
             font-family: var(--title-font-secondary);
-            border: 2px solid var(--foreground-primary);
+            border: 1px solid var(--foreground-primary);
             border-left: none; }
 
             .certification-provider {
@@ -207,17 +210,16 @@ main {
         justify-content: center;
         text-align: center;
         font-family: var(--title-font-secondary);
-        font-size: 1.1rem;
+        font-size: 1.25rem;
         font-weight: bold;
         text-transform: uppercase;
-        color: var(--background-secondary);
-        background: var(--foreground-primary);
+        background: var(--background-secondary);
+        border: 2px solid var(--foreground-primary);
         border-radius: 2%;
-        transition: all 1s ease; }
+        transition: all 0.5s ease; }
     .resume-btn:hover {
-        background: var(--foreground-primary);
-        transition: all 1s ease;
-        transform: scale(0.95); }
+        transition: all 0.5s ease;
+        transform: translateY(-8px); }
 
     .resume-description {
         width: 100%;
@@ -251,7 +253,7 @@ main {
 main a {
     font-weight: bold;
     text-decoration: none;
-    color: var(--foreground-secondary); }
+    color: var(--tertiary); }
 
 @media (orientation: landscape) {
 
@@ -260,6 +262,9 @@ main a {
 
     .education-container {
         width: 50%; }
+
+        .education-item {
+            padding: 5vh 2.5vw; }
     
     .expertise-container {
         width: 50%; }
