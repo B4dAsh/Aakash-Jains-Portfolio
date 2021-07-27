@@ -190,6 +190,10 @@ main > * {
         flex-direction: column;
         gap: 2vh; }
 
+        .skills-list > li {
+            padding: 1vh 2.5vw;
+            background: var(--background-secondary); }
+
 .resume-container {
     width: 90vw;
     margin-bottom: 7.5vh;
