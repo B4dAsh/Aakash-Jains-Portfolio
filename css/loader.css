@@ -56,8 +56,8 @@
     animation: load 0.75s linear infinite; }
 
 @keyframes load {
-    0% {
+    from {
         transform: rotate(0deg); }
-    100% {
+    to {
         transform: rotate(360deg); }
 }
