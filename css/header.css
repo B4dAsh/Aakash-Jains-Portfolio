@@ -14,12 +14,16 @@
 
     .navbar-title {
         padding: 0 2.5%;
-        font-size: 1.5rem;
         font-family: var(--cursive), cursive;
+        font-size: 1.5rem;
+        font-weight: bold;
         transition: all 0.5s linear; }
     .navbar-title:hover {
         color: var(--background-primary);
         background-color: var(--foreground-primary); }
+
+    .navbar-links {
+        display: none; }
 
     .hamburger-btn {
         height: 5vh;
@@ -201,7 +205,26 @@ header {
 
 @media(orientation : landscape) {
 
+        .navbar-title {
+            padding: 0 5vw; }
+
+        .navbar-links {
+            display: flex;
+            height: 100%;
+            padding-right: 5vw;
+            font-size: 0.9rem;
+            font-weight: bold; }
+
+            .navbar-links > a {
+                padding: 1.25vw;
+                align-self: center; }
+
+             .navbar-links > a:hover {
+                color: var(--background-secondary);
+                background-color: var(--foreground-primary); }
+
     .hamburger-btn {
+        display: none;
         padding-right: 2px; }
 
     .hamburger-menu * {
