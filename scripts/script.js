@@ -2,7 +2,7 @@ let hb;
 let menuOpen = false;
 
 function hamburger() {
-    
+
     if (!menuOpen) {
         hb = document.getElementById("hamburger-menu-container");
         hb.classList.add("menu-opened");
@@ -18,5 +18,5 @@ function hamburger() {
 }
 
 $(document).ready(function() {
-    setTimeout( () => $('.loader-container').fadeOut('slow'), 1000);
+    setTimeout( () => $('.loader-container').fadeOut('slow'));
 });

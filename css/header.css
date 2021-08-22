@@ -47,7 +47,8 @@ header {
     padding: 0;
     height: 95vh;
     width: 100%;
-    transition: .5s; }
+    transition: .5s;
+    background: linear-gradient(#7c94ac, #4f5570 50%, #df5636,#323238 90%); }
 
 .hamburger-menu-container {
     position: fixed;
@@ -95,10 +96,9 @@ header {
     text-align: left;
     font-family: var(--title-font-primary);
     color: var(--header-foreground);
-    background-color: var(--foreground-primary);
     background: url(../assets/images/header-background.png) no-repeat center center fixed;
     background-size: cover; }
-        
+
     .header-main-text {
         margin-top: -7.5vh;
         text-align: center;
