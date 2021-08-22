@@ -223,19 +223,16 @@ header {
                 color: var(--background-secondary);
                 background-color: var(--foreground-primary); }
 
+    .header-main-titles {
+            font-size: 20px; }
+
     .hamburger-btn {
-        display: none;
-        padding-right: 2px; }
+        display: none; }
 
     .hamburger-menu * {
         width: 25vw; }
 
-    .header-main-titles {
-        font-size: 20px;
-    }
-
     .header-main-btn {
-        width: 25vw;
-    }
+            width: 25vw; }
 
 }
