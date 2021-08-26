@@ -16,10 +16,9 @@
         padding: 0 2.5%;
         font-family: var(--cursive), cursive;
         font-size: 1.5rem;
-        font-weight: bold;
-        transition: all 0.5s linear; }
+        font-weight: bold; }
     .navbar-title:hover {
-        color: var(--background-primary);
+        color: var(--background-secondary);
         background-color: var(--foreground-primary); }
 
     .navbar-links {
@@ -65,7 +64,7 @@ header {
     .menu-opened {
         margin-left: 0;
         transition: all 0.33s linear; }
-        
+
         .hamburger-menu {
             height: 100%;
             width: 100%;
@@ -73,7 +72,7 @@ header {
             flex-direction: column;
             align-items: center;
             padding-top: 15vh; }
-        
+
         .hamburger-menu > a {
             width: 50%;
             text-align: center;
@@ -96,7 +95,7 @@ header {
     text-align: left;
     font-family: var(--title-font-primary);
     color: var(--header-foreground);
-    background: url(../assets/images/header-background.png) no-repeat center center fixed;
+    background: url('https://ik.imagekit.io/ashtrospection/portfolio_header_background.png?updatedAt=1629640311732') no-repeat center center fixed;
     background-size: cover; }
 
     .header-main-text {
@@ -112,7 +111,7 @@ header {
         .header-main-text > p:last-child {
             font-family: var(--cursive);
             font-size: 1.75rem; }
-        
+
     .header-main-btns-container {
         display: flex;
         flex-direction: column;
@@ -121,7 +120,7 @@ header {
         height: 25vh;
         text-align: center; 
         color: var(--foreground-primary); }
-        
+
         .header-main-btn {
             height: 7.5vh;
             width: 60vw;
@@ -140,7 +139,7 @@ header {
         .header-main-btn:hover {
             border: 2px solid var(--hover-color);
             transform: translateY(-8px); }
-        
+
         .header-main-btn-divider {
             font-size: 0.75rem;
             color: var(--header-foreground); }

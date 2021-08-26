@@ -9,6 +9,8 @@ main {
     font-family: var(--primary-font), serif;
     color: var(--foreground-primary);
     background-color: var(--background-primary); }
+main > div:last-child {
+    margin-bottom: 7.5vh; }
 
 main > * {
     min-height: 40vh; }
@@ -35,7 +37,7 @@ main > * {
         background: var(--foreground-primary);
         padding: 2px;
         border-radius: 50%; }
-        
+
     .main-intro {
         display: flex;
         flex-direction: column;
@@ -65,7 +67,7 @@ main > * {
         text-align: left;
         background-color: var(--background-secondary);
         border: 1px solid var(--foreground-primary); }
-        
+
         .education-item-title {
             font-family: var(--title-font-secondary);
             font-size: 1.35rem;
@@ -132,6 +134,71 @@ main > * {
             .expertise-item-description ul {
                 list-style: square; }
 
+.projects-container {
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5vh; }
+
+    .projects-main-description > a {
+        text-decoration: underline; }
+
+    .project-item {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 3vh;
+        text-align: left;
+        padding: 2vh 5vw;
+        color: var(--background-secondary);
+        cursor: crosshair;
+        z-index: 2; }
+    .project-item:hover > .project-item-bg {
+        opacity: 0.3; }
+
+        .project-title {
+            font-family: var(--title-font-secondary);
+            font-size: 1.75rem; }
+
+        .project-description {
+            font-size: 0.85rem; }
+
+        .project-tech-stack {
+            display: flex;
+            gap: 2vw;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold; }
+
+            .project-tech-stack > span {
+                padding: 1px;
+                background-color: var(--foreground-primary);
+                border-radius: 5px; }
+
+        .project-item-btns {
+            display: flex;
+            gap: 2.5vw; }
+
+            .project-item-btn {
+                font-size: 1.5rem;
+                color: var(--background-primary); }
+
+        .project-item-bg-img {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            margin: -2vh -5vw;
+            object-fit: cover;
+            z-index: -1; }
+        .project-item-bg {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            margin: -2vh -5vw;
+            background: var(--foreground-primary);
+
+            opacity: 0.7;
+            z-index: -1; }
+
 .certifications-container {
     width: 90vw;
     display: flex;
@@ -160,7 +227,7 @@ main > * {
             font-size: 3.5rem;
             color: var(--background-primary);
             transition: all 0.3s ease; }
-        
+
         .certification-item-info-container {
             padding: 0 5% 2% 5%;
             width: 70%;
@@ -196,7 +263,6 @@ main > * {
 
 .resume-container {
     width: 90vw;
-    margin-bottom: 7.5vh;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -254,33 +320,26 @@ main > * {
 .main-title::after {
     margin: 0 10% 0 2%; }
 
-main a {
+main .intro-container a,
+main .education-container a,
+main .certifications-container a {
     font-weight: bold;
     text-decoration: none;
     color: var(--tertiary); }
 
 @media (orientation: landscape) {
 
-    .intro-container {
-        width: 66.66%; }
-
-    .education-container {
-        width: 50%; }
+    .intro-container,
+    .education-container,
+    .expertise-container,
+    .projects-container,
+    .certifications-container,
+    .skills-container,
+    .resume-container {
+        width: 50vw; }
 
         .education-item {
             padding: 5vh 2.5vw; }
-    
-    .expertise-container {
-        width: 50%; }
-
-    .certifications-container {
-        width: 50vw; }
-
-    .skills-container {
-        width: 50%; }
-
-    .resume-container {
-        width: 50%; }
 
         .resume-description {
             align-self: center;
