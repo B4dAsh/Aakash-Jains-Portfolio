@@ -154,7 +154,7 @@ main > * {
         cursor: crosshair;
         z-index: 2; }
     .project-item:hover > .project-item-bg {
-        opacity: 0.3; }
+        opacity: 0.5; }
 
         .project-title {
             font-family: var(--title-font-secondary);
@@ -165,13 +165,15 @@ main > * {
 
         .project-tech-stack {
             display: flex;
-            gap: 2vw;
+            gap: 7.5px;
+            flex-flow: row wrap;
             font-family: 'Courier New', Courier, monospace;
+            font-size: 0.9rem;
             font-weight: bold; }
 
             .project-tech-stack > span {
-                padding: 1px;
-                background-color: var(--foreground-primary);
+                padding: 1px 0.5em;
+                border: 2px solid var(--background-primary);
                 border-radius: 5px; }
 
         .project-item-btns {
@@ -179,7 +181,7 @@ main > * {
             gap: 2.5vw; }
 
             .project-item-btn {
-                font-size: 1.5rem;
+                font-size: 1.75rem;
                 color: var(--background-primary); }
 
         .project-item-bg-img {
