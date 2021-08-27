@@ -179,9 +179,8 @@ main > * {
             display: flex;
             gap: 2.5vw; }
 
-            .project-item-btn {
-                font-size: 1.75rem;
-                color: var(--background-primary); }
+            .project-item-btn > i {
+                font-size: 1.75rem; }
 
         .project-item-bg-img {
             position: absolute;
