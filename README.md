@@ -4,6 +4,10 @@ Hi, there! 👋 Thanks for checking out this repository of my personal portfolio
 
 I went for plain HTML and CSS without any framework so as to maintain a fresh and an authentic look with both [Netlify][netlify] and [Github Pages][github pages] as hosts.
 
+<br />
+
+![portfolio](https://ik.imagekit.io/ashtrospection/portfolio_screenshot.png?updatedAt=1629640262506)
+
 ## 🛠 Tools I Used
 * [HTML5, CSS3, JavaScript](https://www.w3schools.com/). *(duh!)* 🤷‍♂️
 * [jQuery][jquery] - A tiny bit. 🤏
