@@ -33,7 +33,7 @@ main > * {
         max-height: 50vh;
         max-width: 75vw;
         aspect-ratio: 1/1;
-        filter: grayscale(50%);
+        filter: grayscale(25%);
         background: var(--foreground-primary);
         padding: 2px;
         border-radius: 50%; }
