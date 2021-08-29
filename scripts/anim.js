@@ -13,6 +13,6 @@ let left = [
 let right = [
     ".expertise-container > .expertise-item:nth-of-type(2n)" ]
 
-gsap.from(appear, {opacity: 0, duration: 1});
+gsap.from(appear, {opacity: 0, duration: 0.5});
 gsap.from(up, {y: "-50vh", duration: 0.5});
 gsap.from(down, {y: "50vh", duration: 0.5});
